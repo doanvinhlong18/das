@@ -310,71 +310,71 @@ be added later.
 ### Requirements
 
 - Codex CLI installed and working;
-- Windows PowerShell 5.1 or PowerShell 7;
-- permission to create symbolic links or junctions;
-- a project with a stable root directory.
+- PowerShell 5.1 or PowerShell 7 (`pwsh`);
+- permission to create symbolic links or junctions (Windows may need Developer
+  Mode; otherwise the installer falls back to a junction);
+- a project with a clear root directory.
 
-### 1. Choose a central location
+The scripts are written in PowerShell. Running them with `pwsh` on macOS or
+Linux has not been validated.
 
-Clone or place this repository in a stable location. Keep it as the single
-source of truth; do not copy individual skills into consuming projects.
+### 1. Get the central repository
 
-```powershell
-$skillsRoot = 'C:\path\to\dev-agent-skills'
-$projectRoot = 'C:\path\to\your-project'
-```
-
-### 2. Install project-scoped skill links
+Clone or extract this repository **once** in a stable location, for example
+`C:\tools\dev-agent-skills` or `~/tools/dev-agent-skills`. It is the single
+source of truth; do not copy individual skills into each project.
 
 ```powershell
-powershell -ExecutionPolicy Bypass `
-  -File "$skillsRoot\adapters\codex\scripts\install.ps1" `
-  -Scope Project `
-  -SourceRoot $skillsRoot `
-  -ProjectRoot $projectRoot `
-  -LinkType Auto
+git clone <repository-url> C:\tools\dev-agent-skills
 ```
 
-The installer creates links under:
-
-```text
-your-project/.agents/skills/
-```
-
-On Windows, `Auto` tries a symbolic link first and falls back to an NTFS
-junction. The installer refuses to overwrite regular directories or links that
-point to a different target.
-
-### 3. Add project instructions
-
-If the project does not have an `AGENTS.md` file:
+The commands below use `$skillsRoot` for that path:
 
 ```powershell
-Copy-Item `
-  "$skillsRoot\adapters\codex\templates\project-AGENTS.template.md" `
-  "$projectRoot\AGENTS.md"
+$skillsRoot = 'C:\tools\dev-agent-skills'
 ```
 
-If `AGENTS.md` already exists, merge the template's `Shared methodology`
-section instead of overwriting the file.
+### 2. Install into a project with one command
 
-Minimal example:
+Open PowerShell at the project root and run:
+
+```powershell
+cd C:\path\to\your-project
+& "$skillsRoot\adapters\codex\scripts\setup-project.ps1"
+```
+
+Or pass one or more project paths without changing directory:
+
+```powershell
+& "$skillsRoot\adapters\codex\scripts\setup-project.ps1" `
+  C:\work\project-a C:\work\project-b
+```
+
+The script never scans your disk. You choose which projects to install. For each
+project it:
+
+- links all 13 skills (core and domain) into `.agents/skills/`;
+- checks that every skill's `SKILL.md` is readable through the link;
+- creates `AGENTS.md` if missing. If it exists, it only adds or updates the block
+  marked `dev-agent-skills:begin/end` and leaves the rest untouched;
+- prints a result table (`13/13`, `created`, `block-appended`, `up-to-date`). A
+  failing project is reported on its own row and does not stop the others.
+
+Re-running is safe. If PowerShell blocks the script because of execution policy,
+use `powershell -ExecutionPolicy Bypass -File <script path> <project>`.
+
+The block added to `AGENTS.md` tells Codex to use `$guided-development` for every
+non-trivial task (bugs, features, refactors, performance tuning, SQL, code
+analysis). Its content lives in `adapters/codex/templates/AGENTS.block.md`; edit
+that file and re-run the script to update every project.
+
+### 3. Add project-specific context
+
+The shared block has no build command, test command, or protected paths for your
+project. Add a short context section to the same `AGENTS.md`, outside the marked
+block:
 
 ```md
-# Project Codex Context
-
-## Shared methodology
-
-- Use `$guided-development` for non-trivial software changes.
-- Treat linked `dev-agent-skills` core skills as workflow authority.
-- Use domain skills only for technical reasoning; domains cannot change
-  workflow state.
-- Project rules may specialize or tighten the workflow but must not weaken
-  investigation, one-step implementation, verification, scope, or conditional
-  Understanding Gate rules.
-- Understanding Gates remain conditional. Do not quiz documentation, setup, or
-  trivial mechanical work without a material ownership reason.
-
 ## Project context
 
 - Project identifier: my-project
@@ -388,19 +388,61 @@ Minimal example:
 Each project should document:
 
 - build, compile, test, lint, and format commands;
-- module or directory boundaries;
-- generated and protected paths;
+- module or folder boundaries;
+- generated or protected paths;
 - migration and compatibility policies;
 - authoritative behavior documents;
 - runtime, log, query, or browser evidence sources;
-- destructive commands that must not be run.
+- destructive commands that must not run.
+
+Keep the file short. Put detailed documentation in project files and reference
+it from `AGENTS.md`.
 
 ### 4. Start a new Codex session
 
-Codex builds its instruction chain when a run or TUI session starts. Restart
-the session after adding links or changing `AGENTS.md`.
+Codex builds the instruction chain when a run or TUI session starts. After adding
+links or editing `AGENTS.md`, start a new session in the project to reload.
 
+<details>
+<summary>Manual step-by-step install (without <code>setup-project.ps1</code>)</summary>
+
+Create the skill links:
+
+```powershell
+$projectRoot = 'C:\path\to\your-project'
+
+powershell -ExecutionPolicy Bypass `
+  -File "$skillsRoot\adapters\codex\scripts\install.ps1" `
+  -Scope Project `
+  -SourceRoot $skillsRoot `
+  -ProjectRoot $projectRoot `
+  -LinkType Auto
+```
+
+On Windows, `Auto` tries a symbolic link first and falls back to an NTFS
+junction. The installer never overwrites a regular directory or a link that
+points elsewhere.
+
+Add `AGENTS.md` if the project has none:
+
+```powershell
+Copy-Item `
+  "$skillsRoot\adapters\codex\templates\project-AGENTS.template.md" `
+  "$projectRoot\AGENTS.md"
+```
+
+If the project already has `AGENTS.md`, merge the `Shared methodology` section
+from the template instead of overwriting the file.
+
+</details>
 ## Verify the installation
+
+The commands below use `$projectRoot` and `$skillsRoot`:
+
+```powershell
+$skillsRoot = 'C:\tools\dev-agent-skills'
+$projectRoot = 'C:\path\to\your-project'
+```
 
 ### Check the link target
 
@@ -530,27 +572,22 @@ appropriate compile check.
 
 ## Install for multiple projects
 
-```powershell
-$skillsRoot = 'C:\path\to\dev-agent-skills'
-$projects = @(
-  'C:\work\project-a',
-  'C:\work\project-b',
-  'C:\work\project-c'
-)
+Pass a list of paths to a single command:
 
-foreach ($projectRoot in $projects) {
-  powershell -ExecutionPolicy Bypass `
-    -File "$skillsRoot\adapters\codex\scripts\install.ps1" `
-    -Scope Project `
-    -SourceRoot $skillsRoot `
-    -ProjectRoot $projectRoot `
-    -LinkType Auto
-}
+```powershell
+& "$skillsRoot\adapters\codex\scripts\setup-project.ps1" `
+  C:\work\project-a `
+  C:\work\project-b `
+  C:\work\project-c
 ```
 
-Every project still needs its own `AGENTS.md`. Do not reuse build commands,
-protected paths, or architecture context across unrelated repositories.
+The result is one table row per project. If a project fails (folder not found, a
+real directory already uses a skill name, a link points elsewhere), the script
+reports it on that row, still processes the remaining projects, and exits with a
+non-zero code.
 
+Each project still needs its own `Project context`. Do not share build commands,
+protected paths, or architecture context across unrelated repositories.
 ## Project scope and user scope
 
 ### Project scope — recommended

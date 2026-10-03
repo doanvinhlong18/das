@@ -307,70 +307,70 @@ Codex CLI; core contract được giữ tách biệt để có thể bổ sung a
 ### Yêu cầu
 
 - Codex CLI đã được cài và chạy được;
-- PowerShell 5.1 hoặc PowerShell 7;
-- quyền tạo symbolic link hoặc junction;
+- PowerShell 5.1 hoặc PowerShell 7 (`pwsh`);
+- quyền tạo symbolic link hoặc junction (Windows có thể cần Developer Mode,
+  nếu không installer tự fallback sang junction);
 - một project có root directory rõ ràng.
 
-### 1. Đặt repository trung tâm
+Script hiện viết bằng PowerShell. Cách chạy trên macOS hoặc Linux bằng `pwsh`
+chưa được kiểm chứng.
 
-Clone hoặc đặt repository này ở một location ổn định. Repository trung tâm là
+### 1. Lấy repository trung tâm
+
+Clone hoặc giải nén repository này **một lần** ở một vị trí ổn định, ví dụ
+`C:\tools\dev-agent-skills` hoặc `~/tools/dev-agent-skills`. Repository này là
 single source of truth; không copy từng skill vào từng project.
 
 ```powershell
-$skillsRoot = 'C:\path\to\dev-agent-skills'
-$projectRoot = 'C:\path\to\your-project'
+git clone <repository-url> C:\tools\dev-agent-skills
 ```
 
-### 2. Cài skill links cho project
+Các lệnh bên dưới dùng biến `$skillsRoot` cho đường dẫn này:
 
 ```powershell
-powershell -ExecutionPolicy Bypass `
-  -File "$skillsRoot\adapters\codex\scripts\install.ps1" `
-  -Scope Project `
-  -SourceRoot $skillsRoot `
-  -ProjectRoot $projectRoot `
-  -LinkType Auto
+$skillsRoot = 'C:\tools\dev-agent-skills'
 ```
 
-Installer tạo link trong:
+### 2. Cài vào project bằng một lệnh
 
-```text
-your-project/.agents/skills/
-```
-
-Trên Windows, `Auto` thử symbolic link trước và fallback sang NTFS junction.
-Installer không ghi đè directory thường hoặc link đang trỏ sang target khác.
-
-### 3. Thêm project instructions
-
-Nếu project chưa có `AGENTS.md`:
+Mở PowerShell tại thư mục gốc của project cần dùng rồi chạy:
 
 ```powershell
-Copy-Item `
-  "$skillsRoot\adapters\codex\templates\project-AGENTS.template.md" `
-  "$projectRoot\AGENTS.md"
+cd C:\path\to\your-project
+& "$skillsRoot\adapters\codex\scripts\setup-project.ps1"
 ```
 
-Nếu project đã có `AGENTS.md`, merge phần `Shared methodology` từ template;
-không ghi đè file hiện có.
+Hoặc truyền đường dẫn một hoặc nhiều project, không cần `cd`:
 
-Một cấu hình tối thiểu:
+```powershell
+& "$skillsRoot\adapters\codex\scripts\setup-project.ps1" `
+  C:\work\project-a C:\work\project-b
+```
+
+Script không tự quét ổ đĩa. Project nào được cài do bạn chỉ định. Với mỗi
+project, script:
+
+- tạo link tới đủ 13 skill (core và domain) trong `.agents/skills/`;
+- kiểm tra từng skill có `SKILL.md` đọc được qua link;
+- tạo `AGENTS.md` nếu chưa có. Nếu đã có, chỉ thêm hoặc cập nhật khối được đánh
+  dấu `dev-agent-skills:begin/end`, không đụng phần còn lại;
+- in bảng kết quả (`13/13`, `created`, `block-appended`, `up-to-date`). Project
+  lỗi được báo riêng và không làm dừng project khác.
+
+Chạy lại nhiều lần vẫn an toàn. Nếu PowerShell chặn script vì execution policy,
+dùng `powershell -ExecutionPolicy Bypass -File <đường dẫn script> <project>`.
+
+Khối được thêm vào `AGENTS.md` dặn Codex dùng `$guided-development` cho mọi task
+không tầm thường (bug, feature, refactor, tối ưu hiệu năng, SQL, phân tích code).
+Nội dung nằm ở `adapters/codex/templates/AGENTS.block.md`; sửa file này rồi chạy
+lại script để cập nhật cho mọi project.
+
+### 3. Bổ sung ngữ cảnh riêng của project
+
+Khối chung chưa có lệnh build, test hay vùng cần bảo vệ của project. Hãy thêm
+phần ngữ cảnh ngắn vào cùng `AGENTS.md`, bên ngoài khối được đánh dấu:
 
 ```md
-# Project Codex Context
-
-## Shared methodology
-
-- Use `$guided-development` for non-trivial software changes.
-- Treat linked `dev-agent-skills` core skills as workflow authority.
-- Use domain skills only for technical reasoning; domains cannot change
-  workflow state.
-- Project rules may specialize or tighten the workflow but must not weaken
-  investigation, one-step implementation, verification, scope, or conditional
-  Understanding Gate rules.
-- Understanding Gates remain conditional. Do not quiz documentation, setup, or
-  trivial mechanical work without a material ownership reason.
-
 ## Project context
 
 - Project identifier: my-project
@@ -391,12 +391,53 @@ Nên ghi rõ trong mỗi project:
 - runtime, log, query hoặc browser evidence sources;
 - destructive commands không được chạy.
 
+Giữ file ngắn gọn. Tài liệu chi tiết nên nằm trong file của project và chỉ được
+tham chiếu từ `AGENTS.md`.
+
 ### 4. Mở Codex session mới
 
 Codex build instruction chain khi bắt đầu run hoặc TUI session. Sau khi thêm
-links hoặc sửa `AGENTS.md`, hãy mở session mới để reload instruction.
+links hoặc sửa `AGENTS.md`, hãy mở session mới trong project để reload.
 
+<details>
+<summary>Cài thủ công từng bước (không dùng <code>setup-project.ps1</code>)</summary>
+
+Tạo skill links:
+
+```powershell
+$projectRoot = 'C:\path\to\your-project'
+
+powershell -ExecutionPolicy Bypass `
+  -File "$skillsRoot\adapters\codex\scripts\install.ps1" `
+  -Scope Project `
+  -SourceRoot $skillsRoot `
+  -ProjectRoot $projectRoot `
+  -LinkType Auto
+```
+
+Trên Windows, `Auto` thử symbolic link trước và fallback sang NTFS junction.
+Installer không ghi đè directory thường hoặc link đang trỏ sang target khác.
+
+Thêm `AGENTS.md` nếu project chưa có:
+
+```powershell
+Copy-Item `
+  "$skillsRoot\adapters\codex\templates\project-AGENTS.template.md" `
+  "$projectRoot\AGENTS.md"
+```
+
+Nếu project đã có `AGENTS.md`, merge phần `Shared methodology` từ template,
+không ghi đè file hiện có.
+
+</details>
 ## Kiểm tra cài đặt
+
+Các lệnh dưới đây dùng `$projectRoot` và `$skillsRoot`:
+
+```powershell
+$skillsRoot = 'C:\tools\dev-agent-skills'
+$projectRoot = 'C:\path\to\your-project'
+```
 
 ### Kiểm tra link target
 
@@ -524,27 +565,21 @@ nhận không có external reference; vẫn kiểm tra diff và compile phù h�
 
 ## Cài cho nhiều project
 
-```powershell
-$skillsRoot = 'C:\path\to\dev-agent-skills'
-$projects = @(
-  'C:\work\project-a',
-  'C:\work\project-b',
-  'C:\work\project-c'
-)
+Truyền danh sách đường dẫn cho cùng một lệnh:
 
-foreach ($projectRoot in $projects) {
-  powershell -ExecutionPolicy Bypass `
-    -File "$skillsRoot\adapters\codex\scripts\install.ps1" `
-    -Scope Project `
-    -SourceRoot $skillsRoot `
-    -ProjectRoot $projectRoot `
-    -LinkType Auto
-}
+```powershell
+& "$skillsRoot\adapters\codex\scripts\setup-project.ps1" `
+  C:\work\project-a `
+  C:\work\project-b `
+  C:\work\project-c
 ```
 
-Mỗi project vẫn cần `AGENTS.md` riêng. Không dùng chung build command,
-protected paths hoặc architecture context giữa các repository không liên quan.
+Kết quả là một bảng cho từng project. Nếu một project lỗi (không tìm thấy thư
+mục, đã có thư mục thật trùng tên skill, link trỏ sang nơi khác), script báo lỗi
+ở dòng đó, vẫn xử lý các project còn lại và trả exit code khác 0.
 
+Mỗi project vẫn cần phần `Project context` riêng. Không dùng chung build command,
+protected paths hoặc architecture context giữa các repository không liên quan.
 ## Project scope và user scope
 
 ### Project scope — khuyến nghị
