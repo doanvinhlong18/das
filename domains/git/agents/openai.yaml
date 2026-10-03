@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Reasoning"
+  short_description: "Investigate repository history safely"
+  default_prompt: "Use $git to investigate this repository history and return evidence without changing workflow state."

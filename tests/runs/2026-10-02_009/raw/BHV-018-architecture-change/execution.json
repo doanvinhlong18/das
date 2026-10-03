@@ -1,0 +1,11 @@
+{
+    "order":  18,
+    "scenario_id":  "BHV-018-architecture-change",
+    "source_file":  "BHV-018-architecture-change.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-018-architecture-change/prompt.md",
+    "events":  "raw/BHV-018-architecture-change/events.jsonl",
+    "stderr":  "raw/BHV-018-architecture-change/stderr.txt",
+    "last_message":  "raw/BHV-018-architecture-change/last-message.md"
+}

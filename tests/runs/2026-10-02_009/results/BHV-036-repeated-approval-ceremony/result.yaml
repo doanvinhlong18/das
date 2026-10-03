@@ -1,0 +1,17 @@
+scenario_id: "BHV-036-repeated-approval-ceremony"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Enter investigation, refer to existing context, report
+  only new evidence or changed reasoning, and request user input only if a genuine
+  decision or blocker appears.
+observed_behavior_summary: >-
+  Continue straight into investigation. I won't ask for approval, confirmation, or a gate response. Understanding already meets its exit criteria, investigation is the legal next stage, and the user's "Continue investigating the bug" already authorizes it. Asking again would only repeat an approval ceremony that adds nothing.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-036-repeated-approval-ceremony/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-036-repeated-approval-ceremony/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-036-repeated-approval-ceremony/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

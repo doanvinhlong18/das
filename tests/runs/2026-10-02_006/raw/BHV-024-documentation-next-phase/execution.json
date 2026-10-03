@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-024-documentation-next-phase",
+    "source_file":  "BHV-024-documentation-next-phase.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-024-documentation-next-phase/prompt.md",
+    "events":  "raw/BHV-024-documentation-next-phase/events.jsonl",
+    "stderr":  "raw/BHV-024-documentation-next-phase/stderr.txt",
+    "last_message":  "raw/BHV-024-documentation-next-phase/last-message.md"
+}

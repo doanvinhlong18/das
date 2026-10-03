@@ -1,0 +1,62 @@
+[
+    {
+        "order":  1,
+        "scenario_id":  "BHV-017-legitimate-refactoring",
+        "source_file":  "BHV-017-legitimate-refactoring.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-017-legitimate-refactoring/prompt.md",
+        "events":  "raw/BHV-017-legitimate-refactoring/events.jsonl",
+        "stderr":  "raw/BHV-017-legitimate-refactoring/stderr.txt",
+        "last_message":  "raw/BHV-017-legitimate-refactoring/last-message.md"
+    },
+    {
+        "order":  2,
+        "scenario_id":  "BHV-018-architecture-change",
+        "source_file":  "BHV-018-architecture-change.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-018-architecture-change/prompt.md",
+        "events":  "raw/BHV-018-architecture-change/events.jsonl",
+        "stderr":  "raw/BHV-018-architecture-change/stderr.txt",
+        "last_message":  "raw/BHV-018-architecture-change/last-message.md"
+    },
+    {
+        "order":  3,
+        "scenario_id":  "BHV-019-documentation-only",
+        "source_file":  "BHV-019-documentation-only.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-019-documentation-only/prompt.md",
+        "events":  "raw/BHV-019-documentation-only/events.jsonl",
+        "stderr":  "raw/BHV-019-documentation-only/stderr.txt",
+        "last_message":  "raw/BHV-019-documentation-only/last-message.md"
+    },
+    {
+        "order":  4,
+        "scenario_id":  "BHV-022-unnecessary-gate",
+        "source_file":  "BHV-022-unnecessary-gate.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-022-unnecessary-gate/prompt.md",
+        "events":  "raw/BHV-022-unnecessary-gate/events.jsonl",
+        "stderr":  "raw/BHV-022-unnecessary-gate/stderr.txt",
+        "last_message":  "raw/BHV-022-unnecessary-gate/last-message.md"
+    },
+    {
+        "order":  5,
+        "scenario_id":  "BHV-039-legitimate-scope-expansion",
+        "source_file":  "BHV-039-legitimate-scope-expansion.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-039-legitimate-scope-expansion/prompt.md",
+        "events":  "raw/BHV-039-legitimate-scope-expansion/events.jsonl",
+        "stderr":  "raw/BHV-039-legitimate-scope-expansion/stderr.txt",
+        "last_message":  "raw/BHV-039-legitimate-scope-expansion/last-message.md"
+    }
+]

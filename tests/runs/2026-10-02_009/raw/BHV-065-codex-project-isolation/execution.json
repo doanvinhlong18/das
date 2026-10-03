@@ -1,0 +1,11 @@
+{
+    "order":  74,
+    "scenario_id":  "BHV-065-codex-project-isolation",
+    "source_file":  "BHV-065-codex-project-isolation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-065-codex-project-isolation/prompt.md",
+    "events":  "raw/BHV-065-codex-project-isolation/events.jsonl",
+    "stderr":  "raw/BHV-065-codex-project-isolation/stderr.txt",
+    "last_message":  "raw/BHV-065-codex-project-isolation/last-message.md"
+}

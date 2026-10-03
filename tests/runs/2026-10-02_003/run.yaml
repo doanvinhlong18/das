@@ -1,0 +1,32 @@
+run_id: "2026-10-02_003"
+timestamp: "2026-10-02T20:08:34.5184894+07:00"
+methodology_version: unavailable
+methodology_version_reason: "The workspace is not a Git repository and has no declared release version."
+git_commit: unavailable
+agent: "Codex CLI"
+model: "GPT-5"
+adapter: "codex"
+codex_version: "codex-cli 0.146.0-alpha.3"
+scenario_set_revision: "sha256:ccdfd5b2e9bafad1d3df3ca3c7c5cf6c0cd6ea13bd9b956b449be97026ca09d6"
+scenario_ids:
+  - "BHV-064-codex-shared-skill-discovery"
+  - "BHV-065-codex-project-isolation"
+  - "BHV-066-codex-central-update-propagation"
+  - "BHV-067-codex-conditional-understanding"
+  - "BHV-068-codex-core-invariant-precedence"
+  - "BHV-069-codex-windows-link-setup"
+execution_mode: "focused_adapter_validation"
+evaluator:
+  type: "independent evidence review of validate.ps1 output"
+  version: "phase-11"
+baseline_run: "2026-10-02_002"
+baseline_reason: "Run 2026-10-02_002 is the nearest complete comparable run."
+result: "PASS"
+environment:
+  os: "Microsoft Windows NT 10.0.19045.0"
+  powershell: "5.1.19041.6456"
+notes:
+  - "Post-fix validation completed with all automated checks and independent evidence review passing."
+  - "Prompt-input validates discovery and active instructions without executing a model response."
+  - "Instruction adherence remains model-mediated rather than mechanically guaranteed."
+

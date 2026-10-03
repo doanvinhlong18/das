@@ -1,0 +1,12 @@
+{
+    "order":  48,
+    "scenario_id":  "BHV-039-legitimate-scope-expansion",
+    "source_file":  "BHV-039-legitimate-scope-expansion.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-039-legitimate-scope-expansion/prompt.md",
+    "events":  "raw/BHV-039-legitimate-scope-expansion/events.jsonl",
+    "stderr":  "raw/BHV-039-legitimate-scope-expansion/stderr.txt",
+    "last_message":  "raw/BHV-039-legitimate-scope-expansion/last-message.md"
+}

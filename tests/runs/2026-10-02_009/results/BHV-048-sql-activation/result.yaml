@@ -1,0 +1,17 @@
+scenario_id: "BHV-048-sql-activation"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Activate SQL advice to inspect join and null semantics,
+  result grain, and representative rows; return a hypothesis and read-only
+  discriminating query to core.
+observed_behavior_summary: >-
+  Use `code-investigation` with SQL advisory reasoning. No implementation or additional evidence collection is needed.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-048-sql-activation/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-048-sql-activation/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-048-sql-activation/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

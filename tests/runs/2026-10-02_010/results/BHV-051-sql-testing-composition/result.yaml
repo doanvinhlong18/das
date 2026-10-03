@@ -1,0 +1,16 @@
+scenario_id: "BHV-051-sql-testing-composition"
+result: "PASS"
+severity: "high"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  SQL identifies grain, null, join, and cardinality cases; Testing maps them to failure-discriminating fixtures and assertions; core verification executes and decides `PASS`, `FAIL`, or `INCONCLUSIVE`.
+observed_behavior_summary: >-
+  Define a focused database integration verification using the corrected query, real schema constraints, production SQL dialect, and representative fixtures. Do not use mocks or an alternate in-memory dialect that could hide join/null behavior.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-051-sql-testing-composition/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-051-sql-testing-composition/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-051-sql-testing-composition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

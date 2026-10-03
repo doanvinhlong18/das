@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spring Reasoning"
+  short_description: "Investigate Spring runtime behavior"
+  default_prompt: "Use $spring to investigate this Spring behavior and identify relevant framework evidence and verification guidance."

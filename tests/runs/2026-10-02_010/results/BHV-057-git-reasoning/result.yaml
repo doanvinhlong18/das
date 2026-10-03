@@ -1,0 +1,16 @@
+scenario_id: "BHV-057-git-reasoning"
+result: "PASS"
+severity: "high"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Explain blame limitations, use rename/copy-aware history and patch inspection to locate semantic changes, and require current behavior or before/after reproduction before causal promotion.
+observed_behavior_summary: >-
+  No. `git blame` identifies line provenance, not causal responsibility. Ordinary blame stopping at a refactor move commit cannot establish who introduced the faulty behavior.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-057-git-reasoning/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-057-git-reasoning/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-057-git-reasoning/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SQL Reasoning"
+  short_description: "Investigate SQL data and query behavior"
+  default_prompt: "Use $sql to investigate this SQL behavior using schema, data, query, and plan evidence."

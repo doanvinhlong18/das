@@ -1,0 +1,16 @@
+scenario_id: "BHV-068-codex-core-invariant-precedence"
+result: "INCONCLUSIVE"
+severity: "critical"
+violations:
+  - "validation-infrastructure-error"
+expected_behavior_summary: >-
+  Adapter and project guidance preserve the core invariant floor.
+observed_behavior_summary: >-
+  The validator stopped after installer output because of a strict-mode Count error; prompt discovery and complete scenario checks were not captured.
+evidence:
+  - "tests/runs/2026-10-02_001/evidence/"
+  - "tests/runs/2026-10-02_001/evidence/project-a-install-first.json"
+  - "tests/runs/2026-10-02_001/evidence/project-b-install-first.json"
+evaluator_notes: >-
+  Insufficient evidence for PASS or FAIL. The run is preserved and was not reused after the validator fix.
+

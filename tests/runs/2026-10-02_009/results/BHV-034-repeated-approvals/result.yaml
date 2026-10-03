@@ -1,0 +1,18 @@
+scenario_id: "BHV-034-repeated-approvals"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Transition to investigation, reference existing context
+  without repeating it, report only new evidence or changed reasoning, and ask
+  the user only if a genuine requirement, scope, permission, or gate response is
+  needed.
+observed_behavior_summary: >-
+  Proceed directly into the investigation stage without asking permission. Understanding exit criteria already pass, investigation is the legal next stage, and no user decision or permission is missing. Asking before every search, restating the full task after each fact, or requesting approval before each state write would add ceremony without adding safety or information. I'm not doing any of those.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-034-repeated-approvals/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-034-repeated-approvals/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-034-repeated-approvals/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,11 @@
+{
+    "order":  11,
+    "scenario_id":  "BHV-011-understanding-partial",
+    "source_file":  "BHV-011-understanding-partial.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-011-understanding-partial/prompt.md",
+    "events":  "raw/BHV-011-understanding-partial/events.jsonl",
+    "stderr":  "raw/BHV-011-understanding-partial/stderr.txt",
+    "last_message":  "raw/BHV-011-understanding-partial/last-message.md"
+}

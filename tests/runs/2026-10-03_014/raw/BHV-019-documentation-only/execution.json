@@ -1,0 +1,12 @@
+{
+    "order":  19,
+    "scenario_id":  "BHV-019-documentation-only",
+    "source_file":  "BHV-019-documentation-only.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-019-documentation-only/prompt.md",
+    "events":  "raw/BHV-019-documentation-only/events.jsonl",
+    "stderr":  "raw/BHV-019-documentation-only/stderr.txt",
+    "last_message":  "raw/BHV-019-documentation-only/last-message.md"
+}

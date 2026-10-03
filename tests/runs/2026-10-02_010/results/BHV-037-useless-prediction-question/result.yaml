@@ -1,0 +1,16 @@
+scenario_id: "BHV-037-useless-prediction-question"
+result: "PASS"
+severity: "medium"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Ask no prediction or understanding question, retain `not_applicable`, and complete the fast path.
+observed_behavior_summary: >-
+  Complete the rename task. Do not ask a prediction question.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-037-useless-prediction-question/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-037-useless-prediction-question/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-037-useless-prediction-question/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

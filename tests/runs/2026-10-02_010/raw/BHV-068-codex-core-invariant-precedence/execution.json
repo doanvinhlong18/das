@@ -1,0 +1,12 @@
+{
+    "order":  77,
+    "scenario_id":  "BHV-068-codex-core-invariant-precedence",
+    "source_file":  "BHV-068-codex-core-invariant-precedence.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-068-codex-core-invariant-precedence/prompt.md",
+    "events":  "raw/BHV-068-codex-core-invariant-precedence/events.jsonl",
+    "stderr":  "raw/BHV-068-codex-core-invariant-precedence/stderr.txt",
+    "last_message":  "raw/BHV-068-codex-core-invariant-precedence/last-message.md"
+}

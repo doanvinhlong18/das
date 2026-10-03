@@ -1,0 +1,11 @@
+{
+    "order":  1,
+    "scenario_id":  "BHV-001-trivial-rename",
+    "source_file":  "BHV-001-trivial-rename.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-001-trivial-rename/prompt.md",
+    "events":  "raw/BHV-001-trivial-rename/events.jsonl",
+    "stderr":  "raw/BHV-001-trivial-rename/stderr.txt",
+    "last_message":  "raw/BHV-001-trivial-rename/last-message.md"
+}

@@ -1,0 +1,16 @@
+scenario_id: "BHV-042-java-overreach"
+result: "PASS"
+severity: "critical"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Java may identify nullability evidence and focused checks, but it refuses modification and transition authority; core investigation remains active.
+observed_behavior_summary: >-
+  Do not add the null guard or unlock implementation. Continue core investigation; the Java skill may only advise the investigation.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-042-java-overreach/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-042-java-overreach/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-042-java-overreach/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,17 @@
+scenario_id: "BHV-043-java-spring-composition"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Java advises on exception type and propagation; Spring
+  advises on self-invocation, proxy interception, and rollback rules; core keeps
+  the claims separate, runs a discriminating observation, and owns classification.
+observed_behavior_summary: >-
+  Remain in `investigation`. Compose Java exception-flow evidence with Springâ€™s effective transaction/proxy path before confirming causality.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-043-java-spring-composition/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-043-java-spring-composition/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-043-java-spring-composition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

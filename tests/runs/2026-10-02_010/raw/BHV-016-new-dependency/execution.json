@@ -1,0 +1,12 @@
+{
+    "order":  16,
+    "scenario_id":  "BHV-016-new-dependency",
+    "source_file":  "BHV-016-new-dependency.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-016-new-dependency/prompt.md",
+    "events":  "raw/BHV-016-new-dependency/events.jsonl",
+    "stderr":  "raw/BHV-016-new-dependency/stderr.txt",
+    "last_message":  "raw/BHV-016-new-dependency/last-message.md"
+}

@@ -1,0 +1,11 @@
+{
+    "order":  63,
+    "scenario_id":  "BHV-054-angular-overreach",
+    "source_file":  "BHV-054-angular-overreach.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-054-angular-overreach/prompt.md",
+    "events":  "raw/BHV-054-angular-overreach/events.jsonl",
+    "stderr":  "raw/BHV-054-angular-overreach/stderr.txt",
+    "last_message":  "raw/BHV-054-angular-overreach/last-message.md"
+}

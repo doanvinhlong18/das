@@ -1,0 +1,17 @@
+scenario_id: "BHV-011-understanding-partial"
+result: "PASS"
+severity: "critical"
+violations:
+  []
+expected_behavior_summary: >-
+  Record `partial`, identify only the rollback concept as
+  missing, explain that concept using the actual flow, ask one focused follow-up,
+  and keep dependent steps locked.
+observed_behavior_summary: >-
+  Mark the required understanding gate as `partial`; do not pass it.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-011-understanding-partial/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-011-understanding-partial/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-011-understanding-partial/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

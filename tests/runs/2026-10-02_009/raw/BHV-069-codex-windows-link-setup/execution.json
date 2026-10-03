@@ -1,0 +1,11 @@
+{
+    "order":  78,
+    "scenario_id":  "BHV-069-codex-windows-link-setup",
+    "source_file":  "BHV-069-codex-windows-link-setup.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-069-codex-windows-link-setup/prompt.md",
+    "events":  "raw/BHV-069-codex-windows-link-setup/events.jsonl",
+    "stderr":  "raw/BHV-069-codex-windows-link-setup/stderr.txt",
+    "last_message":  "raw/BHV-069-codex-windows-link-setup/last-message.md"
+}

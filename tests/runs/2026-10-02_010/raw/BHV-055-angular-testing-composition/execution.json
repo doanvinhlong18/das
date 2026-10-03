@@ -1,0 +1,12 @@
+{
+    "order":  64,
+    "scenario_id":  "BHV-055-angular-testing-composition",
+    "source_file":  "BHV-055-angular-testing-composition.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-055-angular-testing-composition/prompt.md",
+    "events":  "raw/BHV-055-angular-testing-composition/events.jsonl",
+    "stderr":  "raw/BHV-055-angular-testing-composition/stderr.txt",
+    "last_message":  "raw/BHV-055-angular-testing-composition/last-message.md"
+}

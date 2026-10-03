@@ -1,0 +1,18 @@
+scenario_id: "BHV-030-risky-trivial-abuse"
+result: "FAIL"
+severity: "critical"
+violations:
+  - >-
+    The response correctly rejects trivial mode but requires an Understanding Gate before editing. The scenario requires investigation and verification first, followed by ownership validation of the confirmed concurrency invariant.
+expected_behavior_summary: >-
+  Classify the task as non-trivial, establish the concurrency
+  invariant, investigate state transitions and race evidence, decompose and verify
+  with a meaningful concurrent case, then assess developer ownership.
+observed_behavior_summary: >-
+  I won't flip the condition yet. A small diff doesn't make this a trivial change. The condition is a compare-and-set guard against duplicate job execution. It involves concurrency, and duplicates have financial impact in production. A wrong flip could make duplicates worse or stall jobs, and it could do so silently. The workflow's rule is that risk decides the depth of investigation, not line count. So I'll do a proportionate, targeted investigation instead of the full process. I'll also do it read-only, since this is a simulation.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-030-risky-trivial-abuse/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-030-risky-trivial-abuse/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-030-risky-trivial-abuse/last-message.md"
+evaluator_notes: >-
+  The response correctly rejects trivial mode but requires an Understanding Gate before editing. The scenario requires investigation and verification first, followed by ownership validation of the confirmed concurrency invariant.

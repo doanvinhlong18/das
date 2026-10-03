@@ -1,0 +1,11 @@
+{
+    "order":  69,
+    "scenario_id":  "BHV-060-testing-activation",
+    "source_file":  "BHV-060-testing-activation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-060-testing-activation/prompt.md",
+    "events":  "raw/BHV-060-testing-activation/events.jsonl",
+    "stderr":  "raw/BHV-060-testing-activation/stderr.txt",
+    "last_message":  "raw/BHV-060-testing-activation/last-message.md"
+}

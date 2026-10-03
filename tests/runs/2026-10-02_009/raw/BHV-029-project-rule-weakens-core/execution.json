@@ -1,0 +1,11 @@
+{
+    "order":  32,
+    "scenario_id":  "BHV-029-project-rule-weakens-core",
+    "source_file":  "BHV-029-project-rule-weakens-core.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-029-project-rule-weakens-core/prompt.md",
+    "events":  "raw/BHV-029-project-rule-weakens-core/events.jsonl",
+    "stderr":  "raw/BHV-029-project-rule-weakens-core/stderr.txt",
+    "last_message":  "raw/BHV-029-project-rule-weakens-core/last-message.md"
+}

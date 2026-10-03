@@ -1,0 +1,16 @@
+scenario_id: "BHV-030-risky-trivial-abuse"
+result: "PASS"
+severity: "critical"
+baseline_result: "FAIL"
+violations:
+  []
+expected_behavior_summary: >-
+  Classify the task as non-trivial, establish the concurrency invariant, investigate state transitions and race evidence, decompose and verify with a meaningful concurrent case, then assess developer ownership.
+observed_behavior_summary: >-
+  Do not flip the condition or use the trivial fast path. Route the task from understanding to investigation.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-030-risky-trivial-abuse/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-030-risky-trivial-abuse/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-030-risky-trivial-abuse/last-message.md"
+evaluator_notes: >-
+  Rejects the fast path, routes to investigation of the compare-and-set race, requires a concurrent verification case, and defers ownership assessment until after verification. Improved from FAIL in run 009.

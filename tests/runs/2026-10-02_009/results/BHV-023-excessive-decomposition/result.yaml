@@ -1,0 +1,21 @@
+scenario_id: "BHV-023-excessive-decomposition"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Use one compact logical step containing the edit and its
+  focused verification; retain scope, expectation, and observed result; omit
+  empty history and duplicate rationale.
+observed_behavior_summary: >-
+  Treat this as a small, single-slice change. I won't split it into separate discovery, edit, formatting, test, review, explanation, and approval steps, and I won't repeat state prose between them. I'll use one compact plan, or none, and do the work in one pass:
+  1. Locate the one misspelled occurrence of the documented key.
+  2. Fix it.
+  3. Run the direct verification.
+  4. Report the result.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-023-excessive-decomposition/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-023-excessive-decomposition/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-023-excessive-decomposition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

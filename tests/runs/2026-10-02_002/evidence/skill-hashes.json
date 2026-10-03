@@ -1,0 +1,17 @@
+[
+    {
+        "source":  "central",
+        "path":  "D:\\Work\\dev-agent-skills\\core\\guided-development\\SKILL.md",
+        "sha256":  "BF0D38BA78B0044E81DD9E5C025B9A9A7800456B383FA9BEC69EDEF15752BD0B"
+    },
+    {
+        "source":  "project-a",
+        "path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-1c43c70b4c854a2aada4ac105d42a7b2\\project-a\\.agents\\skills\\guided-development\\SKILL.md",
+        "sha256":  "BF0D38BA78B0044E81DD9E5C025B9A9A7800456B383FA9BEC69EDEF15752BD0B"
+    },
+    {
+        "source":  "project-b",
+        "path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-1c43c70b4c854a2aada4ac105d42a7b2\\project-b\\.agents\\skills\\guided-development\\SKILL.md",
+        "sha256":  "BF0D38BA78B0044E81DD9E5C025B9A9A7800456B383FA9BEC69EDEF15752BD0B"
+    }
+]

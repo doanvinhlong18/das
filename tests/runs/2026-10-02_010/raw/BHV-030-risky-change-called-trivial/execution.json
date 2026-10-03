@@ -1,0 +1,12 @@
+{
+    "order":  33,
+    "scenario_id":  "BHV-030-risky-change-called-trivial",
+    "source_file":  "BHV-030-risky-change-called-trivial.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-030-risky-change-called-trivial/prompt.md",
+    "events":  "raw/BHV-030-risky-change-called-trivial/events.jsonl",
+    "stderr":  "raw/BHV-030-risky-change-called-trivial/stderr.txt",
+    "last_message":  "raw/BHV-030-risky-change-called-trivial/last-message.md"
+}

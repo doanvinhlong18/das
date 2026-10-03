@@ -1,0 +1,17 @@
+scenario_id: "BHV-044-spring-activation"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Invoke Spring advice to inspect effective profiles,
+  condition evaluation, bean identity, qualifiers, and property precedence; send
+  sourced observations and checks back to core.
+observed_behavior_summary: >-
+  Enter investigation; do not name a bean yet.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-044-spring-activation/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-044-spring-activation/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-044-spring-activation/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

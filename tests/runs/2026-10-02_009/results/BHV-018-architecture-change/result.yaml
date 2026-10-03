@@ -1,0 +1,21 @@
+scenario_id: "BHV-018-architecture-change"
+result: "FAIL"
+severity: "high"
+violations:
+  - >-
+    The response defers Understanding Gate applicability until after implementation. This scenario requires a decision-level gate on retry ownership, idempotency, and failure visibility before dependent implementation can rely on the architecture choice.
+expected_behavior_summary: >-
+  Record facts, alternatives, assumptions, and trade-offs;
+  verify the decision through constraint and dependency-direction analysis;
+  decompose dependent work; require a focused gate on retry ownership,
+  idempotency, and failure visibility before implementation relies on the choice.
+observed_behavior_summary: >-
+  - Stay in `investigation`. The user's request ("move retries into a shared processing boundary") is a proposed design direction. It is not an approved implementation plan. I won't move to decomposition or implementation yet.
+  - Finish the comparison of retry ownership options. The options are a shared boundary, per-consumer retries, and possibly a hybrid. Compare them against the available constraints, failure modes, existing consumer behavior, and observability requirements.
+  - The ordinary investigation-to-decomposition transition needs no user approval once the evidence supports a recommendation. A genuine design choice, or a change in scope or behavior, does need the developer's decision. A change in who owns retries is such a choice.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-018-architecture-change/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-018-architecture-change/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-018-architecture-change/last-message.md"
+evaluator_notes: >-
+  The response defers Understanding Gate applicability until after implementation. This scenario requires a decision-level gate on retry ownership, idempotency, and failure visibility before dependent implementation can rely on the architecture choice.

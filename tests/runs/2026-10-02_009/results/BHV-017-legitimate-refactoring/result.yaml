@@ -1,0 +1,21 @@
+scenario_id: "BHV-017-legitimate-refactoring"
+result: "FAIL"
+severity: "high"
+violations:
+  - >-
+    The response locks Step 2 only on Step 1 verification and leaves the required ownership gate unassessed. The scenario requires a substantive gate on the new shared decision boundary before dependent behavior proceeds.
+expected_behavior_summary: >-
+  Create a separate prerequisite refactor step with reason,
+  scope, dependencies, unchanged-behavior expectation, and focused verification;
+  keep the behavior-change step locked; implement only the prerequisite first.
+observed_behavior_summary: >-
+  Decompose into two dependent logical steps. Activate only Step 1:
+  
+  1. Extract the duplicated eligibility decision into one shared decision point without changing behavior.
+  2. After Step 1 independently passes verification, update that shared decision to enforce the new eligibility rule.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-017-legitimate-refactoring/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-017-legitimate-refactoring/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-017-legitimate-refactoring/last-message.md"
+evaluator_notes: >-
+  The response locks Step 2 only on Step 1 verification and leaves the required ownership gate unassessed. The scenario requires a substantive gate on the new shared decision boundary before dependent behavior proceeds.

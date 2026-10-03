@@ -1,0 +1,11 @@
+{
+    "order":  6,
+    "scenario_id":  "BHV-006-ambiguous-bug",
+    "source_file":  "BHV-006-ambiguous-bug.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-006-ambiguous-bug/prompt.md",
+    "events":  "raw/BHV-006-ambiguous-bug/events.jsonl",
+    "stderr":  "raw/BHV-006-ambiguous-bug/stderr.txt",
+    "last_message":  "raw/BHV-006-ambiguous-bug/last-message.md"
+}

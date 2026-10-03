@@ -1,0 +1,11 @@
+{
+    "order":  73,
+    "scenario_id":  "BHV-064-codex-shared-skill-discovery",
+    "source_file":  "BHV-064-codex-shared-skill-discovery.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-064-codex-shared-skill-discovery/prompt.md",
+    "events":  "raw/BHV-064-codex-shared-skill-discovery/events.jsonl",
+    "stderr":  "raw/BHV-064-codex-shared-skill-discovery/stderr.txt",
+    "last_message":  "raw/BHV-064-codex-shared-skill-discovery/last-message.md"
+}

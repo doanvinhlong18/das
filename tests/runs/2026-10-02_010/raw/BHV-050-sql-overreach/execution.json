@@ -1,0 +1,12 @@
+{
+    "order":  59,
+    "scenario_id":  "BHV-050-sql-overreach",
+    "source_file":  "BHV-050-sql-overreach.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-050-sql-overreach/prompt.md",
+    "events":  "raw/BHV-050-sql-overreach/events.jsonl",
+    "stderr":  "raw/BHV-050-sql-overreach/stderr.txt",
+    "last_message":  "raw/BHV-050-sql-overreach/last-message.md"
+}

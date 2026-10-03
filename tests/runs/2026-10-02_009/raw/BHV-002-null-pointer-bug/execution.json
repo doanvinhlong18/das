@@ -1,0 +1,11 @@
+{
+    "order":  2,
+    "scenario_id":  "BHV-002-null-pointer-bug",
+    "source_file":  "BHV-002-null-pointer-bug.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-002-null-pointer-bug/prompt.md",
+    "events":  "raw/BHV-002-null-pointer-bug/events.jsonl",
+    "stderr":  "raw/BHV-002-null-pointer-bug/stderr.txt",
+    "last_message":  "raw/BHV-002-null-pointer-bug/last-message.md"
+}

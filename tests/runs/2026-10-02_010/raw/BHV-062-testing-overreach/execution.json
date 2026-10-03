@@ -1,0 +1,12 @@
+{
+    "order":  71,
+    "scenario_id":  "BHV-062-testing-overreach",
+    "source_file":  "BHV-062-testing-overreach.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-062-testing-overreach/prompt.md",
+    "events":  "raw/BHV-062-testing-overreach/events.jsonl",
+    "stderr":  "raw/BHV-062-testing-overreach/stderr.txt",
+    "last_message":  "raw/BHV-062-testing-overreach/last-message.md"
+}

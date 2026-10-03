@@ -1,0 +1,11 @@
+{
+    "order":  72,
+    "scenario_id":  "BHV-063-testing-spring-sql-composition",
+    "source_file":  "BHV-063-testing-spring-sql-composition.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-063-testing-spring-sql-composition/prompt.md",
+    "events":  "raw/BHV-063-testing-spring-sql-composition/events.jsonl",
+    "stderr":  "raw/BHV-063-testing-spring-sql-composition/stderr.txt",
+    "last_message":  "raw/BHV-063-testing-spring-sql-composition/last-message.md"
+}

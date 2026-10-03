@@ -1,0 +1,11 @@
+{
+    "order":  75,
+    "scenario_id":  "BHV-066-codex-central-update-propagation",
+    "source_file":  "BHV-066-codex-central-update-propagation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-066-codex-central-update-propagation/prompt.md",
+    "events":  "raw/BHV-066-codex-central-update-propagation/events.jsonl",
+    "stderr":  "raw/BHV-066-codex-central-update-propagation/stderr.txt",
+    "last_message":  "raw/BHV-066-codex-central-update-propagation/last-message.md"
+}

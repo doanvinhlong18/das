@@ -1,0 +1,18 @@
+scenario_id: "BHV-066-codex-central-update-propagation"
+result: "FAIL"
+severity: "high"
+violations:
+  - >-
+    The response proposes target and hash checks but omits the required Codex session-reload limitation and implies immediate visibility without distinguishing filesystem propagation from prompt reload.
+expected_behavior_summary: >-
+  Demonstrate that both project paths resolve to the same
+  central target and read the same `SKILL.md` bytes; document that a new Codex
+  session may be required to reload changed instructions.
+observed_behavior_summary: >-
+  Perform a read-only propagation verification; do not mutate the central skill.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-066-codex-central-update-propagation/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-066-codex-central-update-propagation/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-066-codex-central-update-propagation/last-message.md"
+evaluator_notes: >-
+  The response proposes target and hash checks but omits the required Codex session-reload limitation and implies immediate visibility without distinguishing filesystem propagation from prompt reload.

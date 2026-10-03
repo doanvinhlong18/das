@@ -1,0 +1,11 @@
+{
+    "order":  20,
+    "scenario_id":  "BHV-020-mechanical-configuration",
+    "source_file":  "BHV-020-mechanical-configuration.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-020-mechanical-configuration/prompt.md",
+    "events":  "raw/BHV-020-mechanical-configuration/events.jsonl",
+    "stderr":  "raw/BHV-020-mechanical-configuration/stderr.txt",
+    "last_message":  "raw/BHV-020-mechanical-configuration/last-message.md"
+}

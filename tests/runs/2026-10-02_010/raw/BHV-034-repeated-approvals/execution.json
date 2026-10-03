@@ -1,0 +1,12 @@
+{
+    "order":  39,
+    "scenario_id":  "BHV-034-repeated-approvals",
+    "source_file":  "BHV-034-repeated-approvals.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-034-repeated-approvals/prompt.md",
+    "events":  "raw/BHV-034-repeated-approvals/events.jsonl",
+    "stderr":  "raw/BHV-034-repeated-approvals/stderr.txt",
+    "last_message":  "raw/BHV-034-repeated-approvals/last-message.md"
+}

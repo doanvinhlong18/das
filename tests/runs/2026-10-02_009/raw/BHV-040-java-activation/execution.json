@@ -1,0 +1,11 @@
+{
+    "order":  49,
+    "scenario_id":  "BHV-040-java-activation",
+    "source_file":  "BHV-040-java-activation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-040-java-activation/prompt.md",
+    "events":  "raw/BHV-040-java-activation/events.jsonl",
+    "stderr":  "raw/BHV-040-java-activation/stderr.txt",
+    "last_message":  "raw/BHV-040-java-activation/last-message.md"
+}

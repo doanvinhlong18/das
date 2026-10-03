@@ -1,0 +1,9 @@
+# Optional project-scoped Codex host settings.
+# Codex loads this file only for trusted projects.
+# Keep methodology rules in linked skills and AGENTS.md, not in config.toml.
+
+project_doc_max_bytes = 32768
+
+# Example host-only settings:
+# sandbox_mode = "workspace-write"
+# model_reasoning_effort = "medium"

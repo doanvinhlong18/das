@@ -1,0 +1,11 @@
+{
+    "order":  66,
+    "scenario_id":  "BHV-057-git-reasoning",
+    "source_file":  "BHV-057-git-reasoning.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-057-git-reasoning/prompt.md",
+    "events":  "raw/BHV-057-git-reasoning/events.jsonl",
+    "stderr":  "raw/BHV-057-git-reasoning/stderr.txt",
+    "last_message":  "raw/BHV-057-git-reasoning/last-message.md"
+}

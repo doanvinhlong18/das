@@ -1,0 +1,11 @@
+{
+    "order":  70,
+    "scenario_id":  "BHV-061-testing-reasoning",
+    "source_file":  "BHV-061-testing-reasoning.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-061-testing-reasoning/prompt.md",
+    "events":  "raw/BHV-061-testing-reasoning/events.jsonl",
+    "stderr":  "raw/BHV-061-testing-reasoning/stderr.txt",
+    "last_message":  "raw/BHV-061-testing-reasoning/last-message.md"
+}

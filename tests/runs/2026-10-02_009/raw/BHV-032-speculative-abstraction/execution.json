@@ -1,0 +1,11 @@
+{
+    "order":  36,
+    "scenario_id":  "BHV-032-speculative-abstraction",
+    "source_file":  "BHV-032-speculative-abstraction.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-032-speculative-abstraction/prompt.md",
+    "events":  "raw/BHV-032-speculative-abstraction/events.jsonl",
+    "stderr":  "raw/BHV-032-speculative-abstraction/stderr.txt",
+    "last_message":  "raw/BHV-032-speculative-abstraction/last-message.md"
+}

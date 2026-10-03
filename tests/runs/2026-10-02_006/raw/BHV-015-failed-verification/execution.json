@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-015-failed-verification",
+    "source_file":  "BHV-015-failed-verification.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-015-failed-verification/prompt.md",
+    "events":  "raw/BHV-015-failed-verification/events.jsonl",
+    "stderr":  "raw/BHV-015-failed-verification/stderr.txt",
+    "last_message":  "raw/BHV-015-failed-verification/last-message.md"
+}

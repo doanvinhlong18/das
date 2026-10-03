@@ -1,0 +1,18 @@
+scenario_id: "BHV-015-failed-verification"
+result: "FAIL"
+severity: "critical"
+violations:
+  - >-
+    The response records INCONCLUSIVE even though the observed result contradicts the pre-recorded expectation. The scenario requires verification FAIL with preserved evidence and deliberate recovery routing.
+expected_behavior_summary: >-
+  Record `FAIL`, preserve expected and observed results,
+  state the competing explanations, and return to investigation or understanding
+  as evidence requires. Do not edit production code during verification.
+observed_behavior_summary: >-
+  Do not keep patching blindly. Record verification as **INCONCLUSIVE** and return the active step to investigation.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-015-failed-verification/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-015-failed-verification/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-015-failed-verification/last-message.md"
+evaluator_notes: >-
+  The response records INCONCLUSIVE even though the observed result contradicts the pre-recorded expectation. The scenario requires verification FAIL with preserved evidence and deliberate recovery routing.

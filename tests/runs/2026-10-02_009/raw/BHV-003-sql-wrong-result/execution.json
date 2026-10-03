@@ -1,0 +1,11 @@
+{
+    "order":  3,
+    "scenario_id":  "BHV-003-sql-wrong-result",
+    "source_file":  "BHV-003-sql-wrong-result.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-003-sql-wrong-result/prompt.md",
+    "events":  "raw/BHV-003-sql-wrong-result/events.jsonl",
+    "stderr":  "raw/BHV-003-sql-wrong-result/stderr.txt",
+    "last_message":  "raw/BHV-003-sql-wrong-result/last-message.md"
+}

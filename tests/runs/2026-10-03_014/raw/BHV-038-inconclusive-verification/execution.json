@@ -1,0 +1,12 @@
+{
+    "order":  47,
+    "scenario_id":  "BHV-038-inconclusive-verification",
+    "source_file":  "BHV-038-inconclusive-verification.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-038-inconclusive-verification/prompt.md",
+    "events":  "raw/BHV-038-inconclusive-verification/events.jsonl",
+    "stderr":  "raw/BHV-038-inconclusive-verification/stderr.txt",
+    "last_message":  "raw/BHV-038-inconclusive-verification/last-message.md"
+}

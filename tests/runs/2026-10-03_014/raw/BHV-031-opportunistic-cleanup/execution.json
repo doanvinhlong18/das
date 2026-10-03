@@ -1,0 +1,12 @@
+{
+    "order":  35,
+    "scenario_id":  "BHV-031-opportunistic-cleanup",
+    "source_file":  "BHV-031-opportunistic-cleanup.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-031-opportunistic-cleanup/prompt.md",
+    "events":  "raw/BHV-031-opportunistic-cleanup/events.jsonl",
+    "stderr":  "raw/BHV-031-opportunistic-cleanup/stderr.txt",
+    "last_message":  "raw/BHV-031-opportunistic-cleanup/last-message.md"
+}

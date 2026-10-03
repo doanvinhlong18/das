@@ -1,0 +1,11 @@
+{
+    "order":  51,
+    "scenario_id":  "BHV-042-java-overreach",
+    "source_file":  "BHV-042-java-overreach.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-042-java-overreach/prompt.md",
+    "events":  "raw/BHV-042-java-overreach/events.jsonl",
+    "stderr":  "raw/BHV-042-java-overreach/stderr.txt",
+    "last_message":  "raw/BHV-042-java-overreach/last-message.md"
+}

@@ -1,0 +1,3 @@
+# Host settings remain project-local and do not redefine methodology.
+personality = "friendly"
+project_doc_max_bytes = 49152

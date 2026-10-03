@@ -1,0 +1,17 @@
+scenario_id: "BHV-032-speculative-abstraction"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Implement the coherent local mapping with existing
+  mechanisms; explain briefly that the proposed generality prevents no evidenced
+  current failure; revisit decomposition only if known design damage is proven.
+observed_behavior_summary: >-
+  I would not build a plugin system, registry, runtime registration, or new package. The only evidence is one local deterministic mapping, and no current requirement calls for more. "In case we add many mappings later" is speculative. I would keep the existing mapping, which already uses the project's primitives, as a plain data-driven table. Adding a mapping later would then mean adding an entry, with no new abstraction. I would use $guided-development for the workflow decisions. If I use any domain skill, it would only advise on technical choices.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-032-speculative-abstraction/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-032-speculative-abstraction/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-032-speculative-abstraction/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

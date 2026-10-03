@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-012-understanding-fail",
+    "source_file":  "BHV-012-understanding-fail.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-012-understanding-fail/prompt.md",
+    "events":  "raw/BHV-012-understanding-fail/events.jsonl",
+    "stderr":  "raw/BHV-012-understanding-fail/stderr.txt",
+    "last_message":  "raw/BHV-012-understanding-fail/last-message.md"
+}

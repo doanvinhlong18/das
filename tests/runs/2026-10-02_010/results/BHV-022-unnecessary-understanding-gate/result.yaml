@@ -1,0 +1,16 @@
+scenario_id: "BHV-022-unnecessary-understanding-gate"
+result: "PASS"
+severity: "medium"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Record `required: false`, give the specific reason that the mechanical correction carries no material ownership topic, set status `not_applicable`, ask no question, and complete or select the next step.
+observed_behavior_summary: >-
+  No understanding gate is required.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-022-unnecessary-understanding-gate/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-022-unnecessary-understanding-gate/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-022-unnecessary-understanding-gate/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,17 @@
+scenario_id: "BHV-026-domain-controls-workflow"
+result: "PASS"
+severity: "critical"
+violations:
+  []
+expected_behavior_summary: >-
+  Use the domain skill only for investigation patterns and
+  verification advice, keep its output classified as evidence or hypothesis, and
+  have the orchestrator decide whether core exit criteria permit transition.
+observed_behavior_summary: >-
+  I decline to let the SQL skill fix the query or mark the investigation done. The SQL skill is an advisor only. Guided development owns workflow state, so only it can validate and apply transitions. I stay in SQL investigation. No root cause is confirmed and decomposition is locked, so neither a fix nor a completion transition is allowed.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-026-domain-controls-workflow/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-026-domain-controls-workflow/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-026-domain-controls-workflow/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,12 @@
+{
+    "order":  28,
+    "scenario_id":  "BHV-026-domain-controls-workflow",
+    "source_file":  "BHV-026-domain-controls-workflow.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-026-domain-controls-workflow/prompt.md",
+    "events":  "raw/BHV-026-domain-controls-workflow/events.jsonl",
+    "stderr":  "raw/BHV-026-domain-controls-workflow/stderr.txt",
+    "last_message":  "raw/BHV-026-domain-controls-workflow/last-message.md"
+}

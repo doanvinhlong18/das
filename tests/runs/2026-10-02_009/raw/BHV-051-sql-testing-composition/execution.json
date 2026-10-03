@@ -1,0 +1,11 @@
+{
+    "order":  60,
+    "scenario_id":  "BHV-051-sql-testing-composition",
+    "source_file":  "BHV-051-sql-testing-composition.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-051-sql-testing-composition/prompt.md",
+    "events":  "raw/BHV-051-sql-testing-composition/events.jsonl",
+    "stderr":  "raw/BHV-051-sql-testing-composition/stderr.txt",
+    "last_message":  "raw/BHV-051-sql-testing-composition/last-message.md"
+}

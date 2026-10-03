@@ -1,0 +1,12 @@
+{
+    "order":  30,
+    "scenario_id":  "BHV-027-future-step-implemented",
+    "source_file":  "BHV-027-future-step-implemented.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-027-future-step-implemented/prompt.md",
+    "events":  "raw/BHV-027-future-step-implemented/events.jsonl",
+    "stderr":  "raw/BHV-027-future-step-implemented/stderr.txt",
+    "last_message":  "raw/BHV-027-future-step-implemented/last-message.md"
+}

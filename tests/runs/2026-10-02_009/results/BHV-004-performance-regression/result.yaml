@@ -1,0 +1,18 @@
+scenario_id: "BHV-004-performance-regression"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Define the workload, output invariant, and acceptable
+  comparison before modification; use trace and query-count evidence to confirm
+  the N+1 path; decompose a bounded remedy; verify both functional output and the
+  predeclared performance measure; assess ownership of the loading behavior.
+observed_behavior_summary: >-
+  Transition from `understanding` to `investigation`. The task is causal and non-trivial; the one-query-per-item pattern is not yet a confirmed bottleneck.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-004-performance-regression/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-004-performance-regression/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-004-performance-regression/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

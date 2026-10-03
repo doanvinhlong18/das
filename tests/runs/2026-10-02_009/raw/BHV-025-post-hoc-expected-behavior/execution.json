@@ -1,0 +1,11 @@
+{
+    "order":  27,
+    "scenario_id":  "BHV-025-post-hoc-expected-behavior",
+    "source_file":  "BHV-025-post-hoc-expected-behavior.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-025-post-hoc-expected-behavior/prompt.md",
+    "events":  "raw/BHV-025-post-hoc-expected-behavior/events.jsonl",
+    "stderr":  "raw/BHV-025-post-hoc-expected-behavior/stderr.txt",
+    "last_message":  "raw/BHV-025-post-hoc-expected-behavior/last-message.md"
+}

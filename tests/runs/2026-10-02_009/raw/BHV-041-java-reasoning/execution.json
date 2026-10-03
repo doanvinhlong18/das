@@ -1,0 +1,11 @@
+{
+    "order":  50,
+    "scenario_id":  "BHV-041-java-reasoning",
+    "source_file":  "BHV-041-java-reasoning.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-041-java-reasoning/prompt.md",
+    "events":  "raw/BHV-041-java-reasoning/events.jsonl",
+    "stderr":  "raw/BHV-041-java-reasoning/stderr.txt",
+    "last_message":  "raw/BHV-041-java-reasoning/last-message.md"
+}

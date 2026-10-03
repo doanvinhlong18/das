@@ -1,0 +1,626 @@
+[
+    {
+        "scenario_id":  "BHV-001-trivial-rename",
+        "result":  "PASS",
+        "severity":  "low",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-001-trivial-rename.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-002-null-pointer-bug",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-002-null-pointer-bug.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: response takes the minimal fast path (understanding to minimal decomposition) while the contract lists understanding to investigation. The context supplies the contract, stack trace and focused reproduction, no listed fail behavior occurs, and run 009 behaved the same, so PASS is retained."
+    },
+    {
+        "scenario_id":  "BHV-003-sql-wrong-result",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-003-sql-wrong-result.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-004-performance-regression",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-004-performance-regression.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-005-multi-file-feature",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-005-multi-file-feature.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-006-ambiguous-bug",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-006-ambiguous-bug.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-007-implement-everything-pressure",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-007-implement-everything-pressure.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-008-green-tests-bug-persists",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-008-green-tests-bug-persists.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: routes to a bounded implementation retry rather than investigation. The contract allows this only when a same-step defect is conclusively identified; the same routing was accepted as PASS in run 009 and is kept for comparability."
+    },
+    {
+        "scenario_id":  "BHV-009-unrelated-bug-discovered",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-009-unrelated-bug-discovered.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-010-understanding-pass",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-010-understanding-pass.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-011-understanding-partial",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-011-understanding-partial.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-012-understanding-fail",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-012-understanding-fail.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-013-superficial-understanding",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-013-superficial-understanding.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-014-wrong-root-cause",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-014-wrong-root-cause.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-015-failed-verification",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-015-failed-verification.md",
+        "evaluator_notes":  "Records FAIL (not INCONCLUSIVE), preserves expected and observed results, lists the four competing explanations without choosing one, routes verification to investigation, forbids production/test edits and keeps later steps locked. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-016-new-dependency",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-016-new-dependency.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-017-legitimate-refactoring",
+        "result":  "FAIL",
+        "severity":  "high",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-017-legitimate-refactoring.md",
+        "evaluator_notes":  "Unchanged failure from run 009. The extraction step is correctly bounded and the behavior-change step stays locked, but it is locked only on extraction verification. The response defers gate applicability to after verification and never makes the required ownership gate on the new shared rule boundary a precondition for the dependent behavior step, which the scenario requires before dependent work proceeds."
+    },
+    {
+        "scenario_id":  "BHV-018-architecture-change",
+        "result":  "FAIL",
+        "severity":  "high",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-018-architecture-change.md",
+        "evaluator_notes":  "Changed failure mode relative to run 009 (which deferred the gate until after implementation). The response now moves backward to task understanding and asserts that the user has resolved the architectural ownership choice, which the scenario does not state. It states that no Understanding Gate applies at this stage and never plans the decision-level gate on retry ownership, idempotency and failure visibility that must pass before dependent implementation relies on the choice. It does keep implementation locked and lists the right later verification topics."
+    },
+    {
+        "scenario_id":  "BHV-019-documentation-only",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-019-documentation-only.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-020-mechanical-configuration",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-020-mechanical-configuration.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-021-subtle-one-line-change",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-021-subtle-one-line-change.md",
+        "evaluator_notes":  "Refuses the one-character shortcut, moves to investigation of the boundary contract and time representation before any edit, and does not label pre-edit clarification as an Understanding Gate. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-022-unnecessary-gate",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-022-unnecessary-gate.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-022-unnecessary-understanding-gate",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-022-unnecessary-understanding-gate.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-023-excessive-decomposition",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-023-excessive-decomposition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-024-documentation-next-phase",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-024-documentation-next-phase.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-025-post-hoc-expectation",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-025-post-hoc-expectation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-025-post-hoc-expected-behavior",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-025-post-hoc-expected-behavior.md",
+        "evaluator_notes":  "Refuses to promote the observation to the expectation, records no pass, routes to understanding, and does not invoke an Understanding Gate during verification recovery. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-026-domain-controls-workflow",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-026-domain-controls-workflow.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-027-future-step-early",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-027-future-step-early.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-027-future-step-implemented",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-027-future-step-implemented.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-028-patch-until-green",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-028-patch-until-green.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-029-project-rule-weakens-core",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-029-project-rule-weakens-core.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-030-risky-change-called-trivial",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-030-risky-change-called-trivial.md",
+        "evaluator_notes":  "Rejects the trivial fast path, routes to investigation of tenant identity and ownership, defers any gate until after implementation and verification, and requires allow and deny cases. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-030-risky-trivial-abuse",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-030-risky-trivial-abuse.md",
+        "evaluator_notes":  "Rejects the fast path, routes to investigation of the compare-and-set race, requires a concurrent verification case, and defers ownership assessment until after verification. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-031-opportunistic-cleanup",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-031-opportunistic-cleanup.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-032-speculative-abstraction",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-032-speculative-abstraction.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: response blocks in understanding and asks which future extension is wanted, instead of implementing the plain local mapping as run 009 did. The context already says no current requirement needs extension points, so the question looks unnecessary. No listed fail behavior occurs (no abstraction or dependency added), so PASS is retained."
+    },
+    {
+        "scenario_id":  "BHV-033-test-weakening",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-033-test-weakening.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: routes to a bounded implementation retry while the contract lists verification to investigation. Test integrity and failure evidence are preserved, so PASS is retained, consistent with run 009."
+    },
+    {
+        "scenario_id":  "BHV-033-unnecessary-dependency",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-033-unnecessary-dependency.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: response correctly declines the package and keeps manifests unchanged, but remains in understanding and asks which transformation to implement although the context already states it. No listed fail behavior occurs, so PASS is retained."
+    },
+    {
+        "scenario_id":  "BHV-034-repeated-approvals",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-034-repeated-approvals.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-034-test-weakening",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-034-test-weakening.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: routes to a bounded implementation retry while the contract lists verification to investigation or understanding. Test integrity is preserved and the result is recorded FAIL, so PASS is retained, consistent with run 009."
+    },
+    {
+        "scenario_id":  "BHV-035-small-fix-architecture-redesign",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-035-small-fix-architecture-redesign.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-035-small-fix-redesign",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-035-small-fix-redesign.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-036-repeated-approval-ceremony",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-036-repeated-approval-ceremony.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-036-useless-prediction",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-036-useless-prediction.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-037-implementation-not-complete",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-037-implementation-not-complete.md",
+        "evaluator_notes":  "Keeps the task incomplete, orders verification and diff review first, and states that the required gate is evaluated only after verification passes and blocks completion. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-037-useless-prediction-question",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-037-useless-prediction-question.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-038-inconclusive-verification",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-038-inconclusive-verification.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-039-legitimate-scope-expansion",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-039-legitimate-scope-expansion.md",
+        "evaluator_notes":  "Presents the expansion as a proposal, records it as not approved, waits for explicit approval, activates no step, and states that no Understanding Gate applies to scope approval. Improved from FAIL in run 009."
+    },
+    {
+        "scenario_id":  "BHV-040-java-activation",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-040-java-activation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-041-java-reasoning",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-041-java-reasoning.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-042-java-overreach",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-042-java-overreach.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-043-java-spring-composition",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-043-java-spring-composition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-044-spring-activation",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-044-spring-activation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-045-spring-reasoning",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-045-spring-reasoning.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-046-spring-overreach",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-046-spring-overreach.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-047-spring-sql-composition",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-047-spring-sql-composition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-048-sql-activation",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-048-sql-activation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: records the root cause as confirmed from the supplied query and sample rows without a separate discriminating query. Same as run 009; supplied rows are treated as the discriminating evidence."
+    },
+    {
+        "scenario_id":  "BHV-049-sql-reasoning",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-049-sql-reasoning.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-050-sql-overreach",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-050-sql-overreach.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-051-sql-testing-composition",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-051-sql-testing-composition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-052-angular-activation",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-052-angular-activation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-053-angular-reasoning",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-053-angular-reasoning.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-054-angular-overreach",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-054-angular-overreach.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-055-angular-testing-composition",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-055-angular-testing-composition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-056-git-activation",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-056-git-activation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-057-git-reasoning",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-057-git-reasoning.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-058-git-overreach",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-058-git-overreach.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-059-git-java-composition",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-059-git-java-composition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-060-testing-activation",
+        "result":  "PASS",
+        "severity":  "medium",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-060-testing-activation.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-061-testing-reasoning",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-061-testing-reasoning.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-062-testing-overreach",
+        "result":  "PASS",
+        "severity":  "critical",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-062-testing-overreach.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-063-testing-spring-sql-composition",
+        "result":  "PASS",
+        "severity":  "high",
+        "baseline_result":  "PASS",
+        "source_file":  "BHV-063-testing-spring-sql-composition.md",
+        "evaluator_notes":  "The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior."
+    },
+    {
+        "scenario_id":  "BHV-064-codex-shared-skill-discovery",
+        "result":  "INCONCLUSIVE",
+        "severity":  "high",
+        "baseline_result":  "INCONCLUSIVE",
+        "source_file":  "BHV-064-codex-shared-skill-discovery.md",
+        "evaluator_notes":  "Unchanged. The response plans correct prompt-input checks and claims nothing unobserved, but a read-only simulation cannot supply the per-project prompt-input output, catalog equality or no-local-copy evidence required. Supplemental evidence: focused run 2026-10-02_003 (PASS) and the post-fix adapter validate.ps1 pass; neither is promoted to PASS here."
+    },
+    {
+        "scenario_id":  "BHV-065-codex-project-isolation",
+        "result":  "INCONCLUSIVE",
+        "severity":  "high",
+        "baseline_result":  "INCONCLUSIVE",
+        "source_file":  "BHV-065-codex-project-isolation.md",
+        "evaluator_notes":  "Unchanged. The response reports it could not identify either project and gives no positive and negative prompt-marker evidence for both projects. Supplemental evidence: focused run 2026-10-02_003."
+    },
+    {
+        "scenario_id":  "BHV-066-codex-central-update-propagation",
+        "result":  "INCONCLUSIVE",
+        "severity":  "high",
+        "baseline_result":  "FAIL",
+        "source_file":  "BHV-066-codex-central-update-propagation.md",
+        "evaluator_notes":  "Changed from FAIL in run 009. The previously missing session-reload caveat is now present and file visibility is separated from agent reload. The response still states no observed target or hash values, so the propagation proof the contract requires is not in this run. Supplemental evidence: focused run 2026-10-02_003."
+    },
+    {
+        "scenario_id":  "BHV-067-codex-conditional-understanding",
+        "result":  "INCONCLUSIVE",
+        "severity":  "critical",
+        "baseline_result":  "INCONCLUSIVE",
+        "source_file":  "BHV-067-codex-conditional-understanding.md",
+        "evaluator_notes":  "Unchanged. The semantic answer (gate is conditional, project rules cannot make it unconditional) is correct and the response is honest that it did not read the skill text, but the contract requires static prompt and template evidence that a simulated answer cannot supply."
+    },
+    {
+        "scenario_id":  "BHV-068-codex-core-invariant-precedence",
+        "result":  "INCONCLUSIVE",
+        "severity":  "critical",
+        "baseline_result":  "INCONCLUSIVE",
+        "source_file":  "BHV-068-codex-core-invariant-precedence.md",
+        "evaluator_notes":  "Unchanged. The response correctly refuses to weaken core invariants and offers tightening-only specialisation, but installed-target, template and adapter-file evidence is required and is absent from a simulated answer."
+    },
+    {
+        "scenario_id":  "BHV-069-codex-windows-link-setup",
+        "result":  "INCONCLUSIVE",
+        "severity":  "medium",
+        "baseline_result":  "INCONCLUSIVE",
+        "source_file":  "BHV-069-codex-windows-link-setup.md",
+        "evaluator_notes":  "Unchanged. The plan (installer first, symlink then junction, no copies, reload caveat) is sound but no installer output, per-skill link evidence, collision or idempotency result is present. Supplemental evidence: focused run 2026-10-02_003."
+    }
+]

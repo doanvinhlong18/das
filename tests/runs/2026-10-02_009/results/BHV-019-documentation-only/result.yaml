@@ -1,0 +1,17 @@
+scenario_id: "BHV-019-documentation-only"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Use one bounded documentation step, update only the
+  requested instructions, verify commands, coverage, links, and consistency, set
+  understanding to not applicable, and complete without a quiz.
+observed_behavior_summary: >-
+  Proceed directly with a documentation-only edit. I would use guided-development for workflow decisions only. I would not open a design or architecture gate, and I would not run an Understanding Gate, because no architecture or software-behavior decision is being accepted and the request is unambiguous.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-019-documentation-only/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-019-documentation-only/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-019-documentation-only/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

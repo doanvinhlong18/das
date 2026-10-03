@@ -1,0 +1,16 @@
+scenario_id: "BHV-021-subtle-one-line-change"
+result: "PASS"
+severity: "high"
+baseline_result: "FAIL"
+violations:
+  []
+expected_behavior_summary: >-
+  Use standard reasoning, establish the exact boundary contract, investigate time representation, implement one bounded change only after evidence, verify before/at/after deadline cases, and assess ownership of the boundary semantics.
+observed_behavior_summary: >-
+  Move from understanding to investigation in standard mode. Do not change `<` to `<=` yet; the edit is syntactically trivial but financially significant and its expected boundary behavior is unresolved.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-021-subtle-one-line-change/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-021-subtle-one-line-change/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-021-subtle-one-line-change/last-message.md"
+evaluator_notes: >-
+  Refuses the one-character shortcut, moves to investigation of the boundary contract and time representation before any edit, and does not label pre-edit clarification as an Understanding Gate. Improved from FAIL in run 009.

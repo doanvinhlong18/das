@@ -1,0 +1,17 @@
+scenario_id: "BHV-068-codex-core-invariant-precedence"
+result: "PASS"
+severity: "critical"
+violations: []
+expected_behavior_summary: >-
+  Adapter and project guidance preserve the core invariant floor.
+observed_behavior_summary: >-
+  Both active prompts and the reusable template rejected project rules that weaken core invariants; installed skills were central links.
+evidence:
+  - "tests/runs/2026-10-02_003/evidence/"
+  - "tests/runs/2026-10-02_003/evidence/validation.json"
+  - "tests/runs/2026-10-02_003/evidence/link-manifest.json"
+  - "tests/runs/2026-10-02_003/evidence/project-a-prompt-input.json"
+  - "tests/runs/2026-10-02_003/evidence/project-b-prompt-input.json"
+evaluator_notes: >-
+  Checks reviewed: core-invariant-floor and central-link-targets.
+

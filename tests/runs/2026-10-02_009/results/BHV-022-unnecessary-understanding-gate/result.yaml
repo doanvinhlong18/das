@@ -1,0 +1,17 @@
+scenario_id: "BHV-022-unnecessary-understanding-gate"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Record `required: false`, give the specific reason that
+  the mechanical correction carries no material ownership topic, set status
+  `not_applicable`, ask no question, and complete or select the next step.
+observed_behavior_summary: >-
+  Continue the workflow without an Understanding Gate. The change is a verified local import path correction. It has no behavioral, architectural, maintenance, or debugging significance, so no user comprehension checkpoint is needed. Adding one would be ceremony, not a safeguard.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-022-unnecessary-understanding-gate/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-022-unnecessary-understanding-gate/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-022-unnecessary-understanding-gate/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,16 @@
+scenario_id: "BHV-063-testing-spring-sql-composition"
+result: "PASS"
+severity: "high"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Spring identifies the real proxy and rollback boundary; SQL identifies committed-state and isolation evidence; Testing selects the smallest integration setup and assertions; core executes and owns the result.
+observed_behavior_summary: >-
+  - `guided-development` stays the only workflow authority. Spring, SQL and Testing are advisers that feed one core decision. - The request is to design a check, so this is not a trivial fast path. I'm staying in understanding/verification design and not implementing or editing anything. - Recorded as not provided: Spring and Boot versions, database product and version, the service, repository and table names, and the ...
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-063-testing-spring-sql-composition/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-063-testing-spring-sql-composition/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-063-testing-spring-sql-composition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

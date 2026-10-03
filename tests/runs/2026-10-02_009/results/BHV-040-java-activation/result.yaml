@@ -1,0 +1,19 @@
+scenario_id: "BHV-040-java-activation"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Invoke Java advice with the bounded concurrency and
+  exception question; inspect thread ownership, shared state, exception causes,
+  and happens-before evidence; return advisory checks to core investigation.
+observed_behavior_summary: >-
+  - I stay in the core guided-development investigation workflow and activate the Java domain skill as a technical adviser. The trigger is that the evidence is Java source, a stack trace with thread names, executor setup and the JDK version, and the failure depends on Java concurrency behavior.
+  - The Java skill only advises on JDK and executor semantics. It doesn't change the workflow, and it doesn't relax the evidence or verification rules.
+  - I don't activate Spring or database skills, because the context says no container or database behavior is involved.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-040-java-activation/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-040-java-activation/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-040-java-activation/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

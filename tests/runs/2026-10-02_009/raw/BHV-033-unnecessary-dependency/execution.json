@@ -1,0 +1,11 @@
+{
+    "order":  38,
+    "scenario_id":  "BHV-033-unnecessary-dependency",
+    "source_file":  "BHV-033-unnecessary-dependency.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-033-unnecessary-dependency/prompt.md",
+    "events":  "raw/BHV-033-unnecessary-dependency/events.jsonl",
+    "stderr":  "raw/BHV-033-unnecessary-dependency/stderr.txt",
+    "last_message":  "raw/BHV-033-unnecessary-dependency/last-message.md"
+}

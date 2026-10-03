@@ -1,0 +1,16 @@
+scenario_id: "BHV-002-null-pointer-bug"
+result: "PASS"
+severity: "high"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Record the stack trace, nullable contract, and reproduction as facts; test the dereference explanation as a hypothesis; confirm it only from the focused causal evidence; plan and implement one local behavioral fix with a regression case; verify absent and present values.
+observed_behavior_summary: >-
+  Use the minimal fast path: complete task understanding as `READY_FOR_MINIMAL_DECOMPOSITION`, then invoke `task-decomposition`. No further investigation or user clarification is needed.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-002-null-pointer-bug/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-002-null-pointer-bug/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-002-null-pointer-bug/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: response takes the minimal fast path (understanding to minimal decomposition) while the contract lists understanding to investigation. The context supplies the contract, stack trace and focused reproduction, no listed fail behavior occurs, and run 009 behaved the same, so PASS is retained.

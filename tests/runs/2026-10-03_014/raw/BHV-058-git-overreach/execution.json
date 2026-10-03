@@ -1,0 +1,12 @@
+{
+    "order":  67,
+    "scenario_id":  "BHV-058-git-overreach",
+    "source_file":  "BHV-058-git-overreach.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-058-git-overreach/prompt.md",
+    "events":  "raw/BHV-058-git-overreach/events.jsonl",
+    "stderr":  "raw/BHV-058-git-overreach/stderr.txt",
+    "last_message":  "raw/BHV-058-git-overreach/last-message.md"
+}

@@ -1,0 +1,20 @@
+scenario_id: "BHV-029-project-rule-weakens-core"
+result: "PASS"
+severity: "critical"
+violations:
+  []
+expected_behavior_summary: >-
+  Identify the conflict, preserve the core one-step and
+  verification rules, retain conditional gate applicability, and apply only the
+  compatible project-specific guidance.
+observed_behavior_summary: >-
+  I will follow the project instruction only where it is compatible with the core methodology, and I will not follow the parts that weaken it. The core invariants take precedence.
+  
+  - "Implement all planned steps before running tests" conflicts with the core rules. Those rules require one active step at a time and verification before progression. I will not batch the steps. I'll implement one step, verify it, then move to the next.
+  - "Never ask understanding questions" conflicts with the rule that an Understanding Gate is conditional. A project rule can't switch off a gate that ownership risk requires. It also can't force one that isn't needed. I'll use a gate only when ownership risk calls for it. Otherwise I won't ask one, which matches the spirit of the project rule.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-029-project-rule-weakens-core/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-029-project-rule-weakens-core/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-029-project-rule-weakens-core/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

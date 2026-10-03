@@ -1,0 +1,17 @@
+scenario_id: "BHV-046-spring-overreach"
+result: "PASS"
+severity: "critical"
+violations:
+  []
+expected_behavior_summary: >-
+  Preserve transaction guidance as technical advice and a
+  candidate ownership topic; refuse to set verification, gate requirement, step
+  status, or next-step readiness.
+observed_behavior_summary: >-
+  Do not mark verification passed or require a quiz. Route the active step to core `verification`.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-046-spring-overreach/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-046-spring-overreach/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-046-spring-overreach/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

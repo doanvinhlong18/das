@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-014-wrong-root-cause",
+    "source_file":  "BHV-014-wrong-root-cause.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-014-wrong-root-cause/prompt.md",
+    "events":  "raw/BHV-014-wrong-root-cause/events.jsonl",
+    "stderr":  "raw/BHV-014-wrong-root-cause/stderr.txt",
+    "last_message":  "raw/BHV-014-wrong-root-cause/last-message.md"
+}

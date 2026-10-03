@@ -1,0 +1,4 @@
+interface:
+  display_name: "Java Reasoning"
+  short_description: "Investigate Java behavior and evidence"
+  default_prompt: "Use $java to investigate this Java behavior and propose domain-specific evidence and verification guidance."

@@ -1,0 +1,68 @@
+{
+    "adapter":  "codex",
+    "codex_version":  "codex-cli 0.146.0-alpha.3",
+    "source_root":  "D:\\Work\\dev-agent-skills",
+    "expected_skill_count":  13,
+    "projects":  [
+                     "project-a",
+                     "project-b"
+                 ],
+    "result":  "PASS",
+    "checks":  [
+                   {
+                       "id":  "skill-count",
+                       "result":  "PASS",
+                       "evidence":  "Project A and B each installed 13 linked skills."
+                   },
+                   {
+                       "id":  "idempotent-install",
+                       "result":  "PASS",
+                       "evidence":  "Repeated Project A installation returned already-linked for every skill."
+                   },
+                   {
+                       "id":  "central-link-targets",
+                       "result":  "PASS",
+                       "evidence":  "Every project link resolves to its central core/ or domains/ directory."
+                   },
+                   {
+                       "id":  "shared-source-hash",
+                       "result":  "PASS",
+                       "evidence":  "Central and both linked guided-development SKILL.md paths have the same SHA-256."
+                   },
+                   {
+                       "id":  "codex-shared-discovery",
+                       "result":  "PASS",
+                       "evidence":  "Codex prompt input for both projects lists guided-development from the central repository path."
+                   },
+                   {
+                       "id":  "project-context-isolation",
+                       "result":  "PASS",
+                       "evidence":  "Each prompt includes only its own project marker and focused test command."
+                   },
+                   {
+                       "id":  "conditional-understanding",
+                       "result":  "PASS",
+                       "evidence":  "Both project prompts preserve conditional gates and the documentation/mechanical exception."
+                   },
+                   {
+                       "id":  "project-config-independence",
+                       "result":  "PASS",
+                       "evidence":  "Project-local config files contain different host settings and remain outside the central source."
+                   },
+                   {
+                       "id":  "core-invariant-floor",
+                       "result":  "PASS",
+                       "evidence":  "Both active project prompts and the reusable bridge reject weakening core invariants."
+                   },
+                   {
+                       "id":  "conflict-no-overwrite",
+                       "result":  "PASS",
+                       "evidence":  "Installer rejected a non-link destination and preserved its marker: Destination exists and is not a link: C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\collision-project\\.agents\\skills\\guided-development"
+                   }
+               ],
+    "limitations":  [
+                        "Prompt-input validates discovery and active instructions without executing a model response.",
+                        "Project config values are inspected for independence; effective trusted-project config precedence is documented from the Codex manual rather than exposed by prompt-input.",
+                        "Instruction adherence remains model-mediated and is not a mechanical policy guarantee."
+                    ]
+}

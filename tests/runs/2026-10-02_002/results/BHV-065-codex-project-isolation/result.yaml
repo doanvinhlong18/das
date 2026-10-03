@@ -1,0 +1,17 @@
+scenario_id: "BHV-065-codex-project-isolation"
+result: "PASS"
+severity: "high"
+violations: []
+expected_behavior_summary: >-
+  Both projects retain independent AGENTS.md and project config context.
+observed_behavior_summary: >-
+  Each prompt contained only its own project marker and focused command; project config personalities remained distinct.
+evidence:
+  - "tests/runs/2026-10-02_002/evidence/"
+  - "tests/runs/2026-10-02_002/evidence/validation.json"
+  - "tests/runs/2026-10-02_002/evidence/link-manifest.json"
+  - "tests/runs/2026-10-02_002/evidence/project-a-prompt-input.json"
+  - "tests/runs/2026-10-02_002/evidence/project-b-prompt-input.json"
+evaluator_notes: >-
+  Checks reviewed: project-context-isolation and project-config-independence.
+

@@ -1,0 +1,19 @@
+scenario_id: "BHV-021-subtle-one-line-change"
+result: "FAIL"
+severity: "high"
+violations:
+  - >-
+    The response labels pre-edit contract clarification as the Understanding Gate. Required ordering is task understanding and investigation before editing, then verification, then ownership validation.
+expected_behavior_summary: >-
+  Use standard reasoning, establish the exact boundary
+  contract, investigate time representation, implement one bounded change only
+  after evidence, verify before/at/after deadline cases, and assess ownership of
+  the boundary semantics.
+observed_behavior_summary: >-
+  I would not make the edit yet. The change is one character, but it moves the exact-deadline behavior in financial settlement. That is a semantic change, and the intended boundary is unconfirmed. I'll first run a short evidence-gathering pass, read-only. If that doesn't settle the boundary, I'll ask one targeted question and then proceed.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-021-subtle-one-line-change/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-021-subtle-one-line-change/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-021-subtle-one-line-change/last-message.md"
+evaluator_notes: >-
+  The response labels pre-edit contract clarification as the Understanding Gate. Required ordering is task understanding and investigation before editing, then verification, then ownership validation.

@@ -1,0 +1,16 @@
+scenario_id: "BHV-065-codex-project-isolation"
+result: "INCONCLUSIVE"
+severity: "high"
+baseline_result: "INCONCLUSIVE"
+violations:
+  []
+expected_behavior_summary: >-
+  Codex prompt input for each project includes only that project's marker and local rules while exposing the same shared skills.
+observed_behavior_summary: >-
+  This is a read-only reporting request, so it takes the trivial fast path. There is no code change, no plan and no implementation step. Task state stays at `understanding` and goes straight to a report. I've loaded `guided-development` and the workspace listing. The current directory has only `AGENTS.md` and `.agents`. No `.codex/config.toml` is visible here, and neither Project A nor Project B has been identified by ...
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-065-codex-project-isolation/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-065-codex-project-isolation/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-065-codex-project-isolation/last-message.md"
+evaluator_notes: >-
+  Unchanged. The response reports it could not identify either project and gives no positive and negative prompt-marker evidence for both projects. Supplemental evidence: focused run 2026-10-02_003.

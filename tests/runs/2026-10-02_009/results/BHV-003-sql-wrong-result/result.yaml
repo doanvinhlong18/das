@@ -1,0 +1,19 @@
+scenario_id: "BHV-003-sql-wrong-result"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Distinguish observed duplicates and join structure from
+  the hypothesis that join cardinality multiplies rows; use a controlled query or
+  plan evidence to confirm the cause; define the expected row set before editing;
+  make one bounded query change; verify content and cardinality; require a small
+  gate about the relationship invariant.
+observed_behavior_summary: >-
+  Continue in `investigation` using `code-investigation`, with `sql` as a technical adviser. Do not implement yet.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-003-sql-wrong-result/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-003-sql-wrong-result/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-003-sql-wrong-result/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

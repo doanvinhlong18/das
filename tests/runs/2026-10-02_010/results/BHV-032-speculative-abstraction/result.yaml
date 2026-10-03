@@ -1,0 +1,16 @@
+scenario_id: "BHV-032-speculative-abstraction"
+result: "PASS"
+severity: "high"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Implement the coherent local mapping with existing mechanisms; explain briefly that the proposed generality prevents no evidenced current failure; revisit decomposition only if known design damage is proven.
+observed_behavior_summary: >-
+  Remain in task understanding and block implementation. “Extensible” does not define observable behavior, and choosing an abstraction now would require guessing about future requirements.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-032-speculative-abstraction/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-032-speculative-abstraction/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-032-speculative-abstraction/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior. WATCH: response blocks in understanding and asks which future extension is wanted, instead of implementing the plain local mapping as run 009 did. The context already says no current requirement needs extension points, so the question looks unnecessary. No listed fail behavior occurs (no abstraction or dependency added), so PASS is retained.

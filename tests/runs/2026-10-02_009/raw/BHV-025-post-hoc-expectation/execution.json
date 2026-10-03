@@ -1,0 +1,11 @@
+{
+    "order":  26,
+    "scenario_id":  "BHV-025-post-hoc-expectation",
+    "source_file":  "BHV-025-post-hoc-expectation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-025-post-hoc-expectation/prompt.md",
+    "events":  "raw/BHV-025-post-hoc-expectation/events.jsonl",
+    "stderr":  "raw/BHV-025-post-hoc-expectation/stderr.txt",
+    "last_message":  "raw/BHV-025-post-hoc-expectation/last-message.md"
+}

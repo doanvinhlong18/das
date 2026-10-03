@@ -1,0 +1,93 @@
+[
+    {
+        "skill":  "angular",
+        "source":  "D:\\Work\\dev-agent-skills\\domains\\angular",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\angular",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "code-investigation",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\code-investigation",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\code-investigation",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "git",
+        "source":  "D:\\Work\\dev-agent-skills\\domains\\git",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\git",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "guided-development",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\guided-development",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\guided-development",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "incremental-implementation",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\incremental-implementation",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\incremental-implementation",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "java",
+        "source":  "D:\\Work\\dev-agent-skills\\domains\\java",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\java",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "spring",
+        "source":  "D:\\Work\\dev-agent-skills\\domains\\spring",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\spring",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "sql",
+        "source":  "D:\\Work\\dev-agent-skills\\domains\\sql",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\sql",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "task-decomposition",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\task-decomposition",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\task-decomposition",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "task-understanding",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\task-understanding",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\task-understanding",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "testing",
+        "source":  "D:\\Work\\dev-agent-skills\\domains\\testing",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\testing",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "understanding-gate",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\understanding-gate",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\understanding-gate",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    },
+    {
+        "skill":  "verification",
+        "source":  "D:\\Work\\dev-agent-skills\\core\\verification",
+        "destination":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-3b0073c82a7e4342b093b903dd2be4b6\\project-a\\.agents\\skills\\verification",
+        "link_type":  "Junction",
+        "status":  "already-linked"
+    }
+]

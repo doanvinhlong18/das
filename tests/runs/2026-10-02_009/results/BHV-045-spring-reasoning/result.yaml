@@ -1,0 +1,17 @@
+scenario_id: "BHV-045-spring-reasoning"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Explain why self-invocation may bypass proxy advice,
+  identify rollback and exception alternatives, and propose observing proxy entry,
+  transaction creation, and committed state before confirming a cause.
+observed_behavior_summary: >-
+  Continue investigation; do not declare root cause from `@Transactional` alone.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-045-spring-reasoning/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-045-spring-reasoning/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-045-spring-reasoning/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,11 @@
+{
+    "order":  53,
+    "scenario_id":  "BHV-044-spring-activation",
+    "source_file":  "BHV-044-spring-activation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-044-spring-activation/prompt.md",
+    "events":  "raw/BHV-044-spring-activation/events.jsonl",
+    "stderr":  "raw/BHV-044-spring-activation/stderr.txt",
+    "last_message":  "raw/BHV-044-spring-activation/last-message.md"
+}

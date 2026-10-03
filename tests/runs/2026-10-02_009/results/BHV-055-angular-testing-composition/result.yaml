@@ -1,0 +1,17 @@
+scenario_id: "BHV-055-angular-testing-composition"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Angular identifies router, subscription, cancellation,
+  and DOM boundaries; Testing selects controlled emissions and assertions that
+  would fail for stale rendering; core owns execution and result.
+observed_behavior_summary: >-
+  Choose one focused Angular component test spanning route-parameter emission â†’ real RxJS component stream â†’ `HttpTestingController` â†’ rendered DOM.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-055-angular-testing-composition/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-055-angular-testing-composition/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-055-angular-testing-composition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

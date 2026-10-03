@@ -1,0 +1,17 @@
+scenario_id: "BHV-069-codex-windows-link-setup"
+result: "PASS"
+severity: "medium"
+violations: []
+expected_behavior_summary: >-
+  Windows setup links every skill, is idempotent, and safely rejects collisions.
+observed_behavior_summary: >-
+  All 26 project skill links were junctions to central targets, repeat installation was idempotent, and a non-link collision was rejected with the intended diagnostic while preserving its marker.
+evidence:
+  - "tests/runs/2026-10-02_003/evidence/"
+  - "tests/runs/2026-10-02_003/evidence/validation.json"
+  - "tests/runs/2026-10-02_003/evidence/link-manifest.json"
+  - "tests/runs/2026-10-02_003/evidence/project-a-prompt-input.json"
+  - "tests/runs/2026-10-02_003/evidence/project-b-prompt-input.json"
+evaluator_notes: >-
+  Checks reviewed: skill-count, idempotent-install, central-link-targets, and conflict-no-overwrite.
+

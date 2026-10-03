@@ -1,0 +1,12 @@
+{
+    "order":  13,
+    "scenario_id":  "BHV-013-superficial-understanding",
+    "source_file":  "BHV-013-superficial-understanding.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-013-superficial-understanding/prompt.md",
+    "events":  "raw/BHV-013-superficial-understanding/events.jsonl",
+    "stderr":  "raw/BHV-013-superficial-understanding/stderr.txt",
+    "last_message":  "raw/BHV-013-superficial-understanding/last-message.md"
+}

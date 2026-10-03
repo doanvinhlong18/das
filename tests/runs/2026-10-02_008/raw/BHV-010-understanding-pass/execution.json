@@ -1,0 +1,11 @@
+{
+    "order":  10,
+    "scenario_id":  "BHV-010-understanding-pass",
+    "source_file":  "BHV-010-understanding-pass.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-010-understanding-pass/prompt.md",
+    "events":  "raw/BHV-010-understanding-pass/events.jsonl",
+    "stderr":  "raw/BHV-010-understanding-pass/stderr.txt",
+    "last_message":  "raw/BHV-010-understanding-pass/last-message.md"
+}

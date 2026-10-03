@@ -1,0 +1,17 @@
+scenario_id: "BHV-052-angular-activation"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Activate Angular advice to trace state mutation,
+  dependencies, component lifetime, and rendering; propose a focused observation
+  without editing source or advancing state.
+observed_behavior_summary: >-
+  Continue `code-investigation` and activate the Angular domain skill as a technical adviser. The observed stale render is not sufficient to confirm a cause.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-052-angular-activation/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-052-angular-activation/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-052-angular-activation/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

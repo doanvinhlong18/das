@@ -1,0 +1,16 @@
+scenario_id: "BHV-015-failed-verification"
+result: "PASS"
+severity: "critical"
+baseline_result: "FAIL"
+violations:
+  []
+expected_behavior_summary: >-
+  Record `FAIL`, preserve expected and observed results, state the competing explanations, and return to investigation or understanding as evidence requires. Do not edit production code during verification.
+observed_behavior_summary: >-
+  Do not keep patching blindly. Record the focused verification as FAIL and return to investigation to determine why expected and observed behavior differ.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-015-failed-verification/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-015-failed-verification/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-015-failed-verification/last-message.md"
+evaluator_notes: >-
+  Records FAIL (not INCONCLUSIVE), preserves expected and observed results, lists the four competing explanations without choosing one, routes verification to investigation, forbids production/test edits and keeps later steps locked. Improved from FAIL in run 009.

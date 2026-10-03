@@ -1,0 +1,12 @@
+{
+    "order":  12,
+    "scenario_id":  "BHV-037-implementation-not-complete",
+    "source_file":  "BHV-037-implementation-not-complete.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-037-implementation-not-complete/prompt.md",
+    "events":  "raw/BHV-037-implementation-not-complete/events.jsonl",
+    "stderr":  "raw/BHV-037-implementation-not-complete/stderr.txt",
+    "last_message":  "raw/BHV-037-implementation-not-complete/last-message.md"
+}

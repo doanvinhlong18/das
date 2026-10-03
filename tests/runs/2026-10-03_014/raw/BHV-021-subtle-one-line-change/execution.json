@@ -1,0 +1,12 @@
+{
+    "order":  21,
+    "scenario_id":  "BHV-021-subtle-one-line-change",
+    "source_file":  "BHV-021-subtle-one-line-change.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-021-subtle-one-line-change/prompt.md",
+    "events":  "raw/BHV-021-subtle-one-line-change/events.jsonl",
+    "stderr":  "raw/BHV-021-subtle-one-line-change/stderr.txt",
+    "last_message":  "raw/BHV-021-subtle-one-line-change/last-message.md"
+}

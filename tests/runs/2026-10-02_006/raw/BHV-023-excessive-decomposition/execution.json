@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-023-excessive-decomposition",
+    "source_file":  "BHV-023-excessive-decomposition.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-023-excessive-decomposition/prompt.md",
+    "events":  "raw/BHV-023-excessive-decomposition/events.jsonl",
+    "stderr":  "raw/BHV-023-excessive-decomposition/stderr.txt",
+    "last_message":  "raw/BHV-023-excessive-decomposition/last-message.md"
+}

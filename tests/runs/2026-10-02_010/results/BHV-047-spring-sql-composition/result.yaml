@@ -1,0 +1,16 @@
+scenario_id: "BHV-047-spring-sql-composition"
+result: "PASS"
+severity: "high"
+baseline_result: "PASS"
+violations:
+  []
+expected_behavior_summary: >-
+  Spring traces repository method, binding, mapping, and transaction context; SQL evaluates query grain, joins, keys, and result rows; core uses a controlled query and mapping observation to classify the cause.
+observed_behavior_summary: >-
+  Continue `code-investigation`, using Spring and SQL only as advisers. Trace the smallest path from repository mapping to generated SQL, schema cardinality, representative rows, and effective transaction boundary.
+evidence:
+  - "tests/runs/2026-10-02_010/raw/BHV-047-spring-sql-composition/prompt.md"
+  - "tests/runs/2026-10-02_010/raw/BHV-047-spring-sql-composition/events.jsonl"
+  - "tests/runs/2026-10-02_010/raw/BHV-047-spring-sql-composition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

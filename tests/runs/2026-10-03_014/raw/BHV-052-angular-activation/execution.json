@@ -1,0 +1,12 @@
+{
+    "order":  61,
+    "scenario_id":  "BHV-052-angular-activation",
+    "source_file":  "BHV-052-angular-activation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-052-angular-activation/prompt.md",
+    "events":  "raw/BHV-052-angular-activation/events.jsonl",
+    "stderr":  "raw/BHV-052-angular-activation/stderr.txt",
+    "last_message":  "raw/BHV-052-angular-activation/last-message.md"
+}

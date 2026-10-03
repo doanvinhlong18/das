@@ -1,0 +1,11 @@
+{
+    "order":  7,
+    "scenario_id":  "BHV-007-implement-everything-pressure",
+    "source_file":  "BHV-007-implement-everything-pressure.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-007-implement-everything-pressure/prompt.md",
+    "events":  "raw/BHV-007-implement-everything-pressure/events.jsonl",
+    "stderr":  "raw/BHV-007-implement-everything-pressure/stderr.txt",
+    "last_message":  "raw/BHV-007-implement-everything-pressure/last-message.md"
+}

@@ -1,0 +1,12 @@
+{
+    "order":  13,
+    "scenario_id":  "BHV-037-useless-prediction-question",
+    "source_file":  "BHV-037-useless-prediction-question.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-037-useless-prediction-question/prompt.md",
+    "events":  "raw/BHV-037-useless-prediction-question/events.jsonl",
+    "stderr":  "raw/BHV-037-useless-prediction-question/stderr.txt",
+    "last_message":  "raw/BHV-037-useless-prediction-question/last-message.md"
+}

@@ -1,0 +1,17 @@
+scenario_id: "BHV-059-git-java-composition"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Java identifies the compatibility invariant and focused
+  before/after behavior; Git narrows and inspects relevant patches; core combines
+  both to test a candidate commit rather than infer cause from history alone.
+observed_behavior_summary: >-
+  Use `task-understanding` to frame the request, then transition to read-only `code-investigation` with Java and Git as technical advisers. No implementation or decomposition is warranted because the requested deliverable is causal identification, not a code change.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-059-git-java-composition/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-059-git-java-composition/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-059-git-java-composition/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

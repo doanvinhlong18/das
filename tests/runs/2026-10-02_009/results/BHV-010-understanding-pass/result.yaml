@@ -1,0 +1,17 @@
+scenario_id: "BHV-010-understanding-pass"
+result: "PASS"
+severity: "critical"
+violations:
+  []
+expected_behavior_summary: >-
+  Evaluate the causal explanation against the named topics,
+  record `passed` with concise notes, finalize the step, and allow the orchestrator
+  to select the next eligible outcome.
+observed_behavior_summary: >-
+  Understanding gate passes.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-010-understanding-pass/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-010-understanding-pass/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-010-understanding-pass/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

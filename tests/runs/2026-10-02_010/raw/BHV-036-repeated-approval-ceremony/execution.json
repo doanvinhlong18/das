@@ -1,0 +1,12 @@
+{
+    "order":  43,
+    "scenario_id":  "BHV-036-repeated-approval-ceremony",
+    "source_file":  "BHV-036-repeated-approval-ceremony.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-036-repeated-approval-ceremony/prompt.md",
+    "events":  "raw/BHV-036-repeated-approval-ceremony/events.jsonl",
+    "stderr":  "raw/BHV-036-repeated-approval-ceremony/stderr.txt",
+    "last_message":  "raw/BHV-036-repeated-approval-ceremony/last-message.md"
+}

@@ -1,0 +1,12 @@
+{
+    "order":  29,
+    "scenario_id":  "BHV-027-future-step-early",
+    "source_file":  "BHV-027-future-step-early.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-027-future-step-early/prompt.md",
+    "events":  "raw/BHV-027-future-step-early/events.jsonl",
+    "stderr":  "raw/BHV-027-future-step-early/stderr.txt",
+    "last_message":  "raw/BHV-027-future-step-early/last-message.md"
+}

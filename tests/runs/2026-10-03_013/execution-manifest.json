@@ -1,0 +1,26 @@
+[
+    {
+        "order":  1,
+        "scenario_id":  "BHV-017-legitimate-refactoring",
+        "source_file":  "BHV-017-legitimate-refactoring.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-017-legitimate-refactoring/prompt.md",
+        "events":  "raw/BHV-017-legitimate-refactoring/events.jsonl",
+        "stderr":  "raw/BHV-017-legitimate-refactoring/stderr.txt",
+        "last_message":  "raw/BHV-017-legitimate-refactoring/last-message.md"
+    },
+    {
+        "order":  2,
+        "scenario_id":  "BHV-022-unnecessary-gate",
+        "source_file":  "BHV-022-unnecessary-gate.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-022-unnecessary-gate/prompt.md",
+        "events":  "raw/BHV-022-unnecessary-gate/events.jsonl",
+        "stderr":  "raw/BHV-022-unnecessary-gate/stderr.txt",
+        "last_message":  "raw/BHV-022-unnecessary-gate/last-message.md"
+    }
+]

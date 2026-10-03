@@ -1,0 +1,17 @@
+scenario_id: "BHV-064-codex-shared-skill-discovery"
+result: "PASS"
+severity: "high"
+violations: []
+expected_behavior_summary: >-
+  Both projects discover the same linked central skill catalog through Codex.
+observed_behavior_summary: >-
+  Codex prompt-input for both fixtures listed guided-development from D:/Work/dev-agent-skills; 13 central links were present in each project.
+evidence:
+  - "tests/runs/2026-10-02_003/evidence/"
+  - "tests/runs/2026-10-02_003/evidence/validation.json"
+  - "tests/runs/2026-10-02_003/evidence/link-manifest.json"
+  - "tests/runs/2026-10-02_003/evidence/project-a-prompt-input.json"
+  - "tests/runs/2026-10-02_003/evidence/project-b-prompt-input.json"
+evaluator_notes: >-
+  Checks reviewed: skill-count, central-link-targets, shared-source-hash, and codex-shared-discovery.
+

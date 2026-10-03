@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-026-domain-controls-workflow",
+    "source_file":  "BHV-026-domain-controls-workflow.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-026-domain-controls-workflow/prompt.md",
+    "events":  "raw/BHV-026-domain-controls-workflow/events.jsonl",
+    "stderr":  "raw/BHV-026-domain-controls-workflow/stderr.txt",
+    "last_message":  "raw/BHV-026-domain-controls-workflow/last-message.md"
+}

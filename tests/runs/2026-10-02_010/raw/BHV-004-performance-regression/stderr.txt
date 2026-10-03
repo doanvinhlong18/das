@@ -1,0 +1,8 @@
+2026-10-02T18:02:13.682397Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: remote installed plugin bundle sync failed error=chatgpt authentication required for remote plugin catalog; api key auth is not supported
+2026-10-02T18:02:13.690626Z  WARN codex_models_manager::model_info: Unknown model Fallback is used. This will use fallback model metadata.
+2026-10-02T18:02:13.703106Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-10-02T18:02:13.776368Z  WARN codex_models_manager::model_info: Unknown model Fallback is used. This will use fallback model metadata.
+2026-10-02T18:02:13.923911Z  WARN codex_core_plugins::manager: failed to warm featured plugin ids cache error=remote featured plugin request to https://chatgpt.com/backend-api/plugins/featured?platform=codex failed with status 401 Unauthorized: {"detail":"Unauthorized"}
+2026-10-02T18:02:17.883924Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=file:///C:/Users/Admin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json
+2026-10-02T18:02:17.890429Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=file:///C:/Users/Admin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json
+2026-10-02T18:03:36.554899Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 215ms)... turn_id=01a0fdc7-ef8f-7ab1-a167-f26047612e96 retries=1 max_retries=5 sampling_error=stream disconnected before completion: stream closed before response.completed

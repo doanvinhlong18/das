@@ -1,0 +1,12 @@
+{
+    "order":  62,
+    "scenario_id":  "BHV-053-angular-reasoning",
+    "source_file":  "BHV-053-angular-reasoning.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-053-angular-reasoning/prompt.md",
+    "events":  "raw/BHV-053-angular-reasoning/events.jsonl",
+    "stderr":  "raw/BHV-053-angular-reasoning/stderr.txt",
+    "last_message":  "raw/BHV-053-angular-reasoning/last-message.md"
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "order":  1,
+        "scenario_id":  "BHV-017-legitimate-refactoring",
+        "source_file":  "BHV-017-legitimate-refactoring.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-017-legitimate-refactoring/prompt.md",
+        "events":  "raw/BHV-017-legitimate-refactoring/events.jsonl",
+        "stderr":  "raw/BHV-017-legitimate-refactoring/stderr.txt",
+        "last_message":  "raw/BHV-017-legitimate-refactoring/last-message.md"
+    },
+    {
+        "order":  2,
+        "scenario_id":  "BHV-018-architecture-change",
+        "source_file":  "BHV-018-architecture-change.md",
+        "status":  "COMPLETED",
+        "exit_code":  null,
+        "completion_signal":  "turn.completed",
+        "prompt":  "raw/BHV-018-architecture-change/prompt.md",
+        "events":  "raw/BHV-018-architecture-change/events.jsonl",
+        "stderr":  "raw/BHV-018-architecture-change/stderr.txt",
+        "last_message":  "raw/BHV-018-architecture-change/last-message.md"
+    }
+]

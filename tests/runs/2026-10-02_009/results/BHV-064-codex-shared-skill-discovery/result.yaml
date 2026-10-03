@@ -1,0 +1,16 @@
+scenario_id: "BHV-064-codex-shared-skill-discovery"
+result: "INCONCLUSIVE"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Both projects expose `guided-development` and the same
+  core/domain catalog, with source paths resolving to the central repository.
+observed_behavior_summary: >-
+  Treat this as a read-only skill-discovery task; no implementation workflow is needed.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-064-codex-shared-skill-discovery/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-064-codex-shared-skill-discovery/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-064-codex-shared-skill-discovery/last-message.md"
+evaluator_notes: >-
+  The response names one shared path but does not capture both projects prompt-input outputs, full catalog equality, or evidence that no project-local copies exist.

@@ -1,0 +1,84 @@
+# Portable task-state template. Replace placeholder values for a real task.
+# Enum and transition semantics are defined in docs/STATE_MACHINE.md.
+schema_version: 1
+
+task:
+  id: "TASK-000"
+  title: "<short task title>"
+  goal: "<outcome the developer wants>"
+  expected_behavior: "<observable behavior that should exist>"
+  status: active # active | blocked | complete
+  mode: standard # minimal | standard
+  scope:
+    in_scope: []
+    out_of_scope: []
+    approved_expansions: []
+
+workflow:
+  stage: understanding # understanding | investigation | decomposition | implementation | verification | understanding_gate | complete | blocked
+  previous_stage: null
+  blocked_reason: null
+  transition_log: []
+  # Transition item: {at, from, to, reason, evidence_refs}
+
+reasoning:
+  facts: []
+  # Fact item: {id, statement, source: {type, reference}, observed_at}
+  hypotheses: []
+  # Hypothesis item: {id, statement, status, evidence_for, evidence_against, falsification_test}
+  # Hypothesis status: active | supported | weakened | disproven
+  confirmed_root_causes: []
+  # Root-cause item: {id, statement, derived_from_hypothesis_id, evidence_refs, confirmed_at, invalidated_at}
+  unresolved_questions: []
+  # Question item: {id, question, blocking, resolution_needed_for}
+
+plan:
+  active_step_id: null
+  steps:
+    - id: "STEP-001"
+      title: "<one logical change>"
+      objective: "<specific outcome of this step>"
+      reason: "<why this step is necessary>"
+      dependencies: []
+      affected_area: []
+      expected_behavior: "<observable result for this step>"
+      scope_boundary:
+        included: []
+        excluded: []
+
+      readiness: locked # locked | ready | active | done
+      implementation:
+        status: not_started # not_started | in_progress | implemented | not_applicable
+        started_at: null
+        completed_at: null
+        actual_changes: []
+        unexpected_observations: []
+
+      verification:
+        required: true
+        reason: "<why verification is required or not required>"
+        strategy: []
+        expected_result: "<record before implementation>"
+        expected_recorded_at: null
+        observed_result: null
+        observed_at: null
+        result: pending # pending | pass | fail | inconclusive | not_required
+        evidence_refs: []
+        limitations: []
+
+      understanding:
+        # null means applicability has not been evaluated yet.
+        required: null
+        reason: null
+        ownership_topics: []
+        status: unassessed # unassessed | pending | passed | partial | failed | not_applicable
+        assessed_at: null
+        questions: []
+        developer_responses: []
+        evaluation_notes: null
+
+      completion: pending # pending | passed
+
+out_of_scope_observations: []
+# Observation item: {id, observation, evidence_refs, potential_impact, action, possible_future_step}
+# action is normally not_modified; recording an observation does not add it to the plan.

@@ -1,0 +1,11 @@
+{
+    "order":  44,
+    "scenario_id":  "BHV-036-useless-prediction",
+    "source_file":  "BHV-036-useless-prediction.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-036-useless-prediction/prompt.md",
+    "events":  "raw/BHV-036-useless-prediction/events.jsonl",
+    "stderr":  "raw/BHV-036-useless-prediction/stderr.txt",
+    "last_message":  "raw/BHV-036-useless-prediction/last-message.md"
+}

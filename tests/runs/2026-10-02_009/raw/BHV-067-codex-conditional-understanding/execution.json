@@ -1,0 +1,11 @@
+{
+    "order":  76,
+    "scenario_id":  "BHV-067-codex-conditional-understanding",
+    "source_file":  "BHV-067-codex-conditional-understanding.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-067-codex-conditional-understanding/prompt.md",
+    "events":  "raw/BHV-067-codex-conditional-understanding/events.jsonl",
+    "stderr":  "raw/BHV-067-codex-conditional-understanding/stderr.txt",
+    "last_message":  "raw/BHV-067-codex-conditional-understanding/last-message.md"
+}

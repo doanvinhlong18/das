@@ -1,0 +1,12 @@
+{
+    "order":  68,
+    "scenario_id":  "BHV-059-git-java-composition",
+    "source_file":  "BHV-059-git-java-composition.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-059-git-java-composition/prompt.md",
+    "events":  "raw/BHV-059-git-java-composition/events.jsonl",
+    "stderr":  "raw/BHV-059-git-java-composition/stderr.txt",
+    "last_message":  "raw/BHV-059-git-java-composition/last-message.md"
+}

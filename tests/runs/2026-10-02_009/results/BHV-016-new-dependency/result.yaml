@@ -1,0 +1,22 @@
+scenario_id: "BHV-016-new-dependency"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Stop implementation, record the unexpected dependency,
+  reconcile partial work, return to decomposition, add a bounded prerequisite
+  only if it is inside approved scope or propose a legitimate scope expansion,
+  and keep the original step locked behind it.
+observed_behavior_summary: >-
+  - I won't fold the schema work into Step 2, and I won't keep coding Step 2 on an assumption that is false.
+  - Step 2's plan assumes a schema capability that the repository shows is absent. That invalidates its dependency, so I pause Step 2 and return to `task-decomposition`. Investigation isn't needed, because the evidence is already in hand.
+  - "Add the missing schema support while you are there" is an explicit request for more scope. I record it as an approved expansion and don't ask again.
+  - The schema work becomes its own prerequisite step, placed before Step 2. It has separate migration risk and needs its own verification.
+  - I won't "finish the feature" in one pass. The request doesn't override the one-active-step and verify-before-pass invariants.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-016-new-dependency/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-016-new-dependency/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-016-new-dependency/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

@@ -1,0 +1,12 @@
+{
+    "order":  4,
+    "scenario_id":  "BHV-004-performance-regression",
+    "source_file":  "BHV-004-performance-regression.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-004-performance-regression/prompt.md",
+    "events":  "raw/BHV-004-performance-regression/events.jsonl",
+    "stderr":  "raw/BHV-004-performance-regression/stderr.txt",
+    "last_message":  "raw/BHV-004-performance-regression/last-message.md"
+}

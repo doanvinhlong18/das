@@ -1,0 +1,11 @@
+{
+    "order":  42,
+    "scenario_id":  "BHV-035-small-fix-redesign",
+    "source_file":  "BHV-035-small-fix-redesign.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-035-small-fix-redesign/prompt.md",
+    "events":  "raw/BHV-035-small-fix-redesign/events.jsonl",
+    "stderr":  "raw/BHV-035-small-fix-redesign/stderr.txt",
+    "last_message":  "raw/BHV-035-small-fix-redesign/last-message.md"
+}

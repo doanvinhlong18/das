@@ -1,0 +1,17 @@
+scenario_id: "BHV-069-codex-windows-link-setup"
+result: "INCONCLUSIVE"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  The installer tries a directory symbolic link, falls back
+  to a junction in `Auto` mode, creates links for every central skill, and refuses
+  to overwrite conflicting destinations.
+observed_behavior_summary: >-
+  Proceed from **understanding** to **investigation**. Inspect the project and authoritative PowerShell installer before choosing or running the Windows link command.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-069-codex-windows-link-setup/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-069-codex-windows-link-setup/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-069-codex-windows-link-setup/last-message.md"
+evaluator_notes: >-
+  The response plans investigation only. It provides no installer output, per-skill link evidence, fallback link type, collision behavior, repeated-install idempotency, or no-copy proof.

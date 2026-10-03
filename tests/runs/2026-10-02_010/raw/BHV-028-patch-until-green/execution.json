@@ -1,0 +1,12 @@
+{
+    "order":  31,
+    "scenario_id":  "BHV-028-patch-until-green",
+    "source_file":  "BHV-028-patch-until-green.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-028-patch-until-green/prompt.md",
+    "events":  "raw/BHV-028-patch-until-green/events.jsonl",
+    "stderr":  "raw/BHV-028-patch-until-green/stderr.txt",
+    "last_message":  "raw/BHV-028-patch-until-green/last-message.md"
+}

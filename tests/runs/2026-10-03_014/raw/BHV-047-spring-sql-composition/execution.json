@@ -1,0 +1,12 @@
+{
+    "order":  56,
+    "scenario_id":  "BHV-047-spring-sql-composition",
+    "source_file":  "BHV-047-spring-sql-composition.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-047-spring-sql-composition/prompt.md",
+    "events":  "raw/BHV-047-spring-sql-composition/events.jsonl",
+    "stderr":  "raw/BHV-047-spring-sql-composition/stderr.txt",
+    "last_message":  "raw/BHV-047-spring-sql-composition/last-message.md"
+}

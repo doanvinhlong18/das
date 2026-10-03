@@ -1,0 +1,12 @@
+{
+    "order":  9,
+    "scenario_id":  "BHV-009-unrelated-bug-discovered",
+    "source_file":  "BHV-009-unrelated-bug-discovered.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-009-unrelated-bug-discovered/prompt.md",
+    "events":  "raw/BHV-009-unrelated-bug-discovered/events.jsonl",
+    "stderr":  "raw/BHV-009-unrelated-bug-discovered/stderr.txt",
+    "last_message":  "raw/BHV-009-unrelated-bug-discovered/last-message.md"
+}

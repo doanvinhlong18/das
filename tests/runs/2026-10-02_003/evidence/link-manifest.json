@@ -1,0 +1,236 @@
+[
+    {
+        "project":  "project-a",
+        "skill":  "angular",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\angular",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\angular",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\angular",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "code-investigation",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\code-investigation",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\code-investigation",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\code-investigation",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "git",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\git",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\git",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\git",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "guided-development",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\guided-development",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\guided-development",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\guided-development",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "incremental-implementation",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\incremental-implementation",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\incremental-implementation",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\incremental-implementation",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "java",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\java",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\java",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\java",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "spring",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\spring",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\spring",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\spring",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "sql",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\sql",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\sql",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\sql",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "task-decomposition",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\task-decomposition",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\task-decomposition",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\task-decomposition",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "task-understanding",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\task-understanding",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\task-understanding",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\task-understanding",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "testing",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\testing",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\testing",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\testing",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "understanding-gate",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\understanding-gate",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\understanding-gate",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\understanding-gate",
+        "matches":  true
+    },
+    {
+        "project":  "project-a",
+        "skill":  "verification",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-a\\.agents\\skills\\verification",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\verification",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\verification",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "angular",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\angular",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\angular",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\angular",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "code-investigation",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\code-investigation",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\code-investigation",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\code-investigation",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "git",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\git",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\git",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\git",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "guided-development",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\guided-development",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\guided-development",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\guided-development",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "incremental-implementation",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\incremental-implementation",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\incremental-implementation",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\incremental-implementation",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "java",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\java",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\java",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\java",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "spring",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\spring",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\spring",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\spring",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "sql",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\sql",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\sql",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\sql",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "task-decomposition",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\task-decomposition",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\task-decomposition",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\task-decomposition",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "task-understanding",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\task-understanding",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\task-understanding",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\task-understanding",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "testing",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\testing",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\domains\\testing",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\domains\\testing",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "understanding-gate",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\understanding-gate",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\understanding-gate",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\understanding-gate",
+        "matches":  true
+    },
+    {
+        "project":  "project-b",
+        "skill":  "verification",
+        "link_path":  "C:\\Users\\Admin\\AppData\\Local\\Temp\\dev-agent-skills-codex-ca59a021684a42ab8ceac062a4d14728\\project-b\\.agents\\skills\\verification",
+        "link_type":  "Junction",
+        "resolved_target":  "D:\\Work\\dev-agent-skills\\core\\verification",
+        "expected_target":  "D:\\Work\\dev-agent-skills\\core\\verification",
+        "matches":  true
+    }
+]

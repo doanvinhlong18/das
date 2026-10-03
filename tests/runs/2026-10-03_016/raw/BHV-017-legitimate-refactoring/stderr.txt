@@ -1,0 +1,16 @@
+2026-10-03T04:10:32.541896Z  WARN codex_core_plugins::remote::remote_installed_plugin_sync: remote installed plugin bundle sync failed error=chatgpt authentication required for remote plugin catalog; api key auth is not supported
+2026-10-03T04:10:32.550739Z  WARN codex_models_manager::model_info: Unknown model Fallback is used. This will use fallback model metadata.
+2026-10-03T04:10:32.563963Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-10-03T04:10:32.590128Z ERROR codex_core::session::session: failed to load skill D:\Work\dev-agent-skills\core\understanding-gate\SKILL.md: missing YAML frontmatter delimited by ---
+2026-10-03T04:10:32.635365Z  WARN codex_models_manager::model_info: Unknown model Fallback is used. This will use fallback model metadata.
+2026-10-03T04:10:32.761212Z  WARN codex_core_plugins::manager: failed to warm featured plugin ids cache error=remote featured plugin request to https://chatgpt.com/backend-api/plugins/featured?platform=codex failed with status 401 Unauthorized: {"detail":"Unauthorized"}
+2026-10-03T04:10:34.233290Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=file:///C:/Users/Admin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json
+2026-10-03T04:10:34.239820Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=file:///C:/Users/Admin/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json
+2026-10-03T04:10:43.565365Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0.5 seconds
+Output:
+The string is missing the terminator: '.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
+ 
+

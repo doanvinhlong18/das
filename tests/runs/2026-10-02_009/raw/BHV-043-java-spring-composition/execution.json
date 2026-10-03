@@ -1,0 +1,11 @@
+{
+    "order":  52,
+    "scenario_id":  "BHV-043-java-spring-composition",
+    "source_file":  "BHV-043-java-spring-composition.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-043-java-spring-composition/prompt.md",
+    "events":  "raw/BHV-043-java-spring-composition/events.jsonl",
+    "stderr":  "raw/BHV-043-java-spring-composition/stderr.txt",
+    "last_message":  "raw/BHV-043-java-spring-composition/last-message.md"
+}

@@ -1,0 +1,11 @@
+{
+    "order":  8,
+    "scenario_id":  "BHV-008-green-tests-bug-persists",
+    "source_file":  "BHV-008-green-tests-bug-persists.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-008-green-tests-bug-persists/prompt.md",
+    "events":  "raw/BHV-008-green-tests-bug-persists/events.jsonl",
+    "stderr":  "raw/BHV-008-green-tests-bug-persists/stderr.txt",
+    "last_message":  "raw/BHV-008-green-tests-bug-persists/last-message.md"
+}

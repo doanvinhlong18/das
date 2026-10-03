@@ -1,0 +1,17 @@
+scenario_id: "BHV-022-unnecessary-gate"
+result: "PASS"
+severity: "medium"
+violations:
+  []
+expected_behavior_summary: >-
+  Ask what failure a gate would prevent, record
+  `required: false`, a specific no-ownership-value reason, empty topics, and
+  `not_applicable`; complete or advance without questioning the developer.
+observed_behavior_summary: >-
+  Continue without an Understanding Gate. Verification has passed, so the next step is to assess applicability and record that the gate isn't needed. I won't add a comprehension checkpoint or ask the user to explain the change.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-022-unnecessary-gate/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-022-unnecessary-gate/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-022-unnecessary-gate/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

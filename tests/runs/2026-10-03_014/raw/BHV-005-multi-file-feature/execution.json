@@ -1,0 +1,12 @@
+{
+    "order":  5,
+    "scenario_id":  "BHV-005-multi-file-feature",
+    "source_file":  "BHV-005-multi-file-feature.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-005-multi-file-feature/prompt.md",
+    "events":  "raw/BHV-005-multi-file-feature/events.jsonl",
+    "stderr":  "raw/BHV-005-multi-file-feature/stderr.txt",
+    "last_message":  "raw/BHV-005-multi-file-feature/last-message.md"
+}

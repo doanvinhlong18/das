@@ -1,0 +1,18 @@
+scenario_id: "BHV-002-null-pointer-bug"
+result: "PASS"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Record the stack trace, nullable contract, and
+  reproduction as facts; test the dereference explanation as a hypothesis;
+  confirm it only from the focused causal evidence; plan and implement one local
+  behavioral fix with a regression case; verify absent and present values.
+observed_behavior_summary: >-
+  `READY_FOR_MINIMAL_DECOMPOSITION`. The behavior is explicit, local, mechanical, low-risk, and directly reproducible; separate investigation is unnecessary.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-002-null-pointer-bug/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-002-null-pointer-bug/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-002-null-pointer-bug/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

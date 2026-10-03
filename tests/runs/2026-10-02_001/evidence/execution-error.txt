@@ -1,0 +1,8 @@
+validate.ps1 aborted before prompt-input validation completed.
+
+Error:
+The property 'Count' cannot be found on this object. Verify that the property exists.
+
+Cause identified after the run:
+Under Set-StrictMode, the empty central-link mismatch pipeline was a scalar/null
+value and did not expose Count. The post-run fix wrapped the pipeline in @(...).

@@ -1,0 +1,11 @@
+{
+    "order":  65,
+    "scenario_id":  "BHV-056-git-activation",
+    "source_file":  "BHV-056-git-activation.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-056-git-activation/prompt.md",
+    "events":  "raw/BHV-056-git-activation/events.jsonl",
+    "stderr":  "raw/BHV-056-git-activation/stderr.txt",
+    "last_message":  "raw/BHV-056-git-activation/last-message.md"
+}

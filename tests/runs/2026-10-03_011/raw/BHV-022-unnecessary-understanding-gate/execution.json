@@ -1,0 +1,12 @@
+{
+    "order":  7,
+    "scenario_id":  "BHV-022-unnecessary-understanding-gate",
+    "source_file":  "BHV-022-unnecessary-understanding-gate.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-022-unnecessary-understanding-gate/prompt.md",
+    "events":  "raw/BHV-022-unnecessary-understanding-gate/events.jsonl",
+    "stderr":  "raw/BHV-022-unnecessary-understanding-gate/stderr.txt",
+    "last_message":  "raw/BHV-022-unnecessary-understanding-gate/last-message.md"
+}

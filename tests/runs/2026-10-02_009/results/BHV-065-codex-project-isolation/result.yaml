@@ -1,0 +1,16 @@
+scenario_id: "BHV-065-codex-project-isolation"
+result: "INCONCLUSIVE"
+severity: "high"
+violations:
+  []
+expected_behavior_summary: >-
+  Codex prompt input for each project includes only that
+  project's marker and local rules while exposing the same shared skills.
+observed_behavior_summary: >-
+  Report each repository independently; do not merge project instructions merely because skills are linked.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-065-codex-project-isolation/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-065-codex-project-isolation/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-065-codex-project-isolation/last-message.md"
+evaluator_notes: >-
+  The response describes intended isolation but does not provide positive and negative prompt-marker evidence for both projects.

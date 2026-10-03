@@ -1,0 +1,4 @@
+interface:
+  display_name: "Testing Reasoning"
+  short_description: "Design focused behavioral verification"
+  default_prompt: "Use $testing to identify focused tests and evidence for this active workflow objective."

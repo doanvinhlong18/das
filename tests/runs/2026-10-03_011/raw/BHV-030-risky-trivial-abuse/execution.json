@@ -1,0 +1,12 @@
+{
+    "order":  10,
+    "scenario_id":  "BHV-030-risky-trivial-abuse",
+    "source_file":  "BHV-030-risky-trivial-abuse.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-030-risky-trivial-abuse/prompt.md",
+    "events":  "raw/BHV-030-risky-trivial-abuse/events.jsonl",
+    "stderr":  "raw/BHV-030-risky-trivial-abuse/stderr.txt",
+    "last_message":  "raw/BHV-030-risky-trivial-abuse/last-message.md"
+}

@@ -1,0 +1,19 @@
+scenario_id: "BHV-069-codex-windows-link-setup"
+result: "FAIL"
+severity: "medium"
+violations:
+  - "collision-rejected-for-wrong-reason"
+  - "false-positive-validator-check"
+expected_behavior_summary: >-
+  Windows setup links every skill, is idempotent, and safely rejects collisions.
+observed_behavior_summary: >-
+  Normal linking and idempotence passed, but the collision path raised "Index was outside the bounds of the array". The automated check incorrectly accepted any exception as safe rejection.
+evidence:
+  - "tests/runs/2026-10-02_002/evidence/"
+  - "tests/runs/2026-10-02_002/evidence/validation.json"
+  - "tests/runs/2026-10-02_002/evidence/link-manifest.json"
+  - "tests/runs/2026-10-02_002/evidence/project-a-prompt-input.json"
+  - "tests/runs/2026-10-02_002/evidence/project-b-prompt-input.json"
+evaluator_notes: >-
+  Independent evaluation overrides validation.json's aggregate PASS because the evidence does not demonstrate the intended collision behavior.
+

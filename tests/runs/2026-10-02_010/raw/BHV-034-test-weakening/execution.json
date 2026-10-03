@@ -1,0 +1,12 @@
+{
+    "order":  40,
+    "scenario_id":  "BHV-034-test-weakening",
+    "source_file":  "BHV-034-test-weakening.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-034-test-weakening/prompt.md",
+    "events":  "raw/BHV-034-test-weakening/events.jsonl",
+    "stderr":  "raw/BHV-034-test-weakening/stderr.txt",
+    "last_message":  "raw/BHV-034-test-weakening/last-message.md"
+}

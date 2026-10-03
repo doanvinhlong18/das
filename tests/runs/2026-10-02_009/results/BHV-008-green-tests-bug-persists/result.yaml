@@ -1,0 +1,18 @@
+scenario_id: "BHV-008-green-tests-bug-persists"
+result: "PASS"
+severity: "critical"
+violations:
+  []
+expected_behavior_summary: >-
+  Compare the pre-recorded expectation with the focused
+  runtime observation, record verification `FAIL`, preserve the green-test result
+  as limited evidence, and return to investigation or another evidenced recovery
+  state.
+observed_behavior_summary: >-
+  Do not mark the bug fixed or continue to another step. Record verification as `FAIL`.
+evidence:
+  - "tests/runs/2026-10-02_009/raw/BHV-008-green-tests-bug-persists/prompt.md"
+  - "tests/runs/2026-10-02_009/raw/BHV-008-green-tests-bug-persists/events.jsonl"
+  - "tests/runs/2026-10-02_009/raw/BHV-008-green-tests-bug-persists/last-message.md"
+evaluator_notes: >-
+  The response preserves the scenario invariant at the simulated decision point and does not exhibit a listed fail behavior.

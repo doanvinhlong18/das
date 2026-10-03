@@ -1,0 +1,10 @@
+{
+    "scenario_id":  "BHV-017-legitimate-refactoring",
+    "source_file":  "BHV-017-legitimate-refactoring.md",
+    "status":  "ERROR",
+    "exit_code":  null,
+    "prompt":  "raw/BHV-017-legitimate-refactoring/prompt.md",
+    "events":  "raw/BHV-017-legitimate-refactoring/events.jsonl",
+    "stderr":  "raw/BHV-017-legitimate-refactoring/stderr.txt",
+    "last_message":  "raw/BHV-017-legitimate-refactoring/last-message.md"
+}

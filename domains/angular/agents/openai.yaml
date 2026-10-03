@@ -1,0 +1,4 @@
+interface:
+  display_name: "Angular Reasoning"
+  short_description: "Investigate Angular application behavior"
+  default_prompt: "Use $angular to investigate this Angular behavior and identify focused evidence and verification guidance."

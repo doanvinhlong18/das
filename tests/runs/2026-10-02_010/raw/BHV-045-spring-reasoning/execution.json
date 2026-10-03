@@ -1,0 +1,12 @@
+{
+    "order":  54,
+    "scenario_id":  "BHV-045-spring-reasoning",
+    "source_file":  "BHV-045-spring-reasoning.md",
+    "status":  "COMPLETED",
+    "exit_code":  null,
+    "completion_signal":  "turn.completed",
+    "prompt":  "raw/BHV-045-spring-reasoning/prompt.md",
+    "events":  "raw/BHV-045-spring-reasoning/events.jsonl",
+    "stderr":  "raw/BHV-045-spring-reasoning/stderr.txt",
+    "last_message":  "raw/BHV-045-spring-reasoning/last-message.md"
+}
