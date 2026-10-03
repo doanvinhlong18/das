@@ -112,6 +112,44 @@ Changes that may require a gate include:
 Mechanical changes such as local renames, import corrections, and routine
 documentation updates normally do not require a gate.
 
+### Targeted Knowledge Building
+
+The skill set does not only check understanding. It also helps the developer
+learn exactly what is missing, in the context of the change being made:
+
+- **Questions grounded in real code:** questions come from the task, evidence,
+  root cause, diff, and current verification result, not generic theory. They
+  can target WHY, HOW, FLOW, EDGE CASE, COUNTERFACTUAL, or PREDICTION.
+- **Developer answers first:** no model answer is shown before the developer
+  responds, so they reason for themselves instead of rereading the agent's
+  conclusion.
+- **Causal evaluation:** the outcome is `passed`, `partial`, or `failed`,
+  based on whether the developer connects mechanism to behavior, not on
+  keyword matching.
+- **Targeted teaching on gaps:** for `partial` or `failed`, the skill explains
+  only the missing concept using evidence from the current change, then asks one
+  follow-up question. It does not turn into a long lecture.
+- **Prediction when it teaches:** the developer may be asked to predict the
+  output for a specific input or state to test their mental model.
+- **No step advance while the gate is open:** the next step unlocks only after
+  the developer shows the required understanding.
+
+```text
+Verification PASS -> assess ownership value
+   -> not required: next step
+   -> required: ask -> developer answers -> evaluate
+        -> passed: next step
+        -> partial/failed: teach the missing part -> re-ask
+```
+
+The skill avoids over-teaching: syntax trivia, vocabulary recall, generic
+theory, and questions answerable without understanding the current change are
+excluded. Developers can always ask for more explanation in a prompt, for
+example: `Explain why this approach is safer than the old one before the next
+step`.
+
+Note: the skill cannot force real understanding. It creates structured
+checkpoints and feedback; learning still depends on the developer.
 ### Proportional process
 
 Small, local, mechanical, low-risk work can use a minimal fast path. A one-line

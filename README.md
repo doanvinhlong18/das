@@ -112,6 +112,42 @@ Các thay đổi có thể cần gate:
 Các thay đổi cơ học như rename local variable, sửa import hoặc cập nhật tài
 liệu thường không cần gate.
 
+### Bổ sung kiến thức đúng chỗ
+
+Bộ skill không chỉ kiểm tra mà còn giúp developer học đúng phần còn thiếu, ngay
+trong ngữ cảnh của thay đổi đang làm:
+
+- **Câu hỏi bám vào code thật:** câu hỏi sinh ra từ task, evidence, root cause,
+  diff và kết quả verification hiện tại, không phải câu hỏi lý thuyết chung. Có
+  thể hỏi theo các góc: WHY, HOW, FLOW, EDGE CASE, COUNTERFACTUAL, PREDICTION.
+- **Developer trả lời trước:** skill không đưa đáp án mẫu trước khi developer
+  trả lời, nên developer phải tự suy luận thay vì đọc lại kết luận của agent.
+- **Đánh giá theo suy luận nhân quả:** kết quả là `passed`, `partial` hoặc
+  `failed`, dựa trên việc developer có nối được cơ chế với hành vi hay không,
+  không dựa vào việc dùng đúng từ khóa.
+- **Teach có mục tiêu khi chưa đạt:** nếu `partial` hoặc `failed`, skill chỉ
+  giải thích khái niệm còn thiếu, dùng đúng evidence của thay đổi hiện tại, rồi
+  hỏi lại một câu follow-up. Không biến thành bài giảng dài.
+- **Prediction khi thật sự có ích:** có thể yêu cầu dự đoán output cho một
+  input hoặc trạng thái cụ thể để developer kiểm chứng mental model của mình.
+- **Không chuyển step khi gate chưa xong:** step kế tiếp chỉ mở sau khi
+  developer thể hiện được hiểu biết cần thiết.
+
+```text
+Verification PASS -> đánh giá ownership value
+   -> không cần: sang step tiếp theo
+   -> cần: hỏi -> developer trả lời -> đánh giá
+        -> passed: sang step tiếp theo
+        -> partial/failed: teach đúng chỗ thiếu -> hỏi lại
+```
+
+Skill không dạy tràn lan: syntax trivia, từ vựng, lý thuyết chung hoặc câu hỏi
+có thể trả lời mà không cần hiểu thay đổi hiện tại đều bị loại. Developer luôn
+có thể yêu cầu giải thích thêm bằng prompt, ví dụ: `Giải thích vì sao cách này
+an toàn hơn cách cũ trước khi sang step tiếp theo`.
+
+Lưu ý: skill không thể ép developer thật sự hiểu. Nó tạo điểm dừng và phản hồi
+có cấu trúc, còn việc học vẫn do developer chủ động.
 ### Quy trình tương xứng với độ khó
 
 Task nhỏ dùng minimal fast path. Task có security, concurrency, migration,
